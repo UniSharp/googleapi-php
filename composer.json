@@ -1,0 +1,15 @@
+{
+    "name": "googleapi-php",
+    "authors": [
+        {
+            "name": "UniSharp Ltd.",
+            "email": "unisharp-service@unisharp.com",
+            "homepage": "http://unisharp.com"
+        }
+    ],
+    "autload": {
+        "psr-4": {
+            "Google\\": "src/"
+        }
+    }
+}
