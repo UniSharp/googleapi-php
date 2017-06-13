@@ -178,8 +178,8 @@ class BuildStep extends \Google\Protobuf\Internal\Message
      */
     public function setEnv(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
-        $this->env = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->env = $arr;
     }
 
     /**
@@ -211,8 +211,8 @@ class BuildStep extends \Google\Protobuf\Internal\Message
      */
     public function setArgs(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
-        $this->args = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->args = $arr;
     }
 
     /**
@@ -298,8 +298,8 @@ class BuildStep extends \Google\Protobuf\Internal\Message
      */
     public function setWaitFor(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
-        $this->wait_for = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->wait_for = $arr;
     }
 
     /**

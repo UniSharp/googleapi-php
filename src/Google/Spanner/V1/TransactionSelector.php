@@ -112,7 +112,7 @@ class TransactionSelector extends \Google\Protobuf\Internal\Message
 
     public function getSelector()
     {
-        return $this->selector;
+        return $this->whichOneof("selector");
     }
 
 }

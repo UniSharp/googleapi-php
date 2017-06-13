@@ -86,7 +86,8 @@ class IssueTaxonomy_Category extends \Google\Protobuf\Internal\Message
      */
     public function setComponents(&$var)
     {
-        $this->components = $var;
+        $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::STRING, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Support\Common\IssueTaxonomy_Component::class);
+        $this->components = $arr;
     }
 
 }

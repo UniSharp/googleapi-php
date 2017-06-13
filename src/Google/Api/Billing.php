@@ -93,8 +93,8 @@ class Billing extends \Google\Protobuf\Internal\Message
      */
     public function setMetrics(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
-        $this->metrics = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->metrics = $arr;
     }
 
     /**
@@ -118,8 +118,8 @@ class Billing extends \Google\Protobuf\Internal\Message
      */
     public function setRules(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Api\BillingStatusRule::class);
-        $this->rules = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Api\BillingStatusRule::class);
+        $this->rules = $arr;
     }
 
 }

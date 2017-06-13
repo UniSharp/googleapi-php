@@ -106,8 +106,8 @@ class ServiceAccount extends \Google\Protobuf\Internal\Message
      */
     public function setScopes(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
-        $this->scopes = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->scopes = $arr;
     }
 
 }

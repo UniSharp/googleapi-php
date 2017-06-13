@@ -124,8 +124,8 @@ class MutateRowRequest extends \Google\Protobuf\Internal\Message
      */
     public function setMutations(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Bigtable\V1\Mutation::class);
-        $this->mutations = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Bigtable\V1\Mutation::class);
+        $this->mutations = $arr;
     }
 
 }

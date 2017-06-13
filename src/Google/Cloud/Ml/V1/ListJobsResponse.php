@@ -61,8 +61,8 @@ class ListJobsResponse extends \Google\Protobuf\Internal\Message
      */
     public function setJobs(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Ml\V1\Job::class);
-        $this->jobs = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Ml\V1\Job::class);
+        $this->jobs = $arr;
     }
 
     /**

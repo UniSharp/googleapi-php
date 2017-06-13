@@ -192,8 +192,8 @@ class CreateTableRequest extends \Google\Protobuf\Internal\Message
      */
     public function setInitialSplitKeys(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
-        $this->initial_split_keys = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->initial_split_keys = $arr;
     }
 
 }

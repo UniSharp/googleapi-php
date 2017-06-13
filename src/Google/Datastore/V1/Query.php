@@ -127,8 +127,8 @@ class Query extends \Google\Protobuf\Internal\Message
      */
     public function setProjection(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Datastore\V1\Projection::class);
-        $this->projection = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Datastore\V1\Projection::class);
+        $this->projection = $arr;
     }
 
     /**
@@ -154,8 +154,8 @@ class Query extends \Google\Protobuf\Internal\Message
      */
     public function setKind(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Datastore\V1\KindExpression::class);
-        $this->kind = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Datastore\V1\KindExpression::class);
+        $this->kind = $arr;
     }
 
     /**
@@ -204,8 +204,8 @@ class Query extends \Google\Protobuf\Internal\Message
      */
     public function setOrder(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Datastore\V1\PropertyOrder::class);
-        $this->order = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Datastore\V1\PropertyOrder::class);
+        $this->order = $arr;
     }
 
     /**
@@ -233,8 +233,8 @@ class Query extends \Google\Protobuf\Internal\Message
      */
     public function setDistinctOn(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Datastore\V1\PropertyReference::class);
-        $this->distinct_on = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Datastore\V1\PropertyReference::class);
+        $this->distinct_on = $arr;
     }
 
     /**

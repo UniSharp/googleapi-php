@@ -62,8 +62,8 @@ class SearchReadGroupSetsResponse extends \Google\Protobuf\Internal\Message
      */
     public function setReadGroupSets(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Genomics\V1\ReadGroupSet::class);
-        $this->read_group_sets = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Genomics\V1\ReadGroupSet::class);
+        $this->read_group_sets = $arr;
     }
 
     /**

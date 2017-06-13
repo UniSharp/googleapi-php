@@ -79,7 +79,7 @@ class Source extends \Google\Protobuf\Internal\Message
 
     public function getSource()
     {
-        return $this->source;
+        return $this->whichOneof("source");
     }
 
 }

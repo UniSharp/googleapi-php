@@ -325,12 +325,12 @@ class Job extends \Google\Protobuf\Internal\Message
 
     public function getInput()
     {
-        return $this->input;
+        return $this->whichOneof("input");
     }
 
     public function getOutput()
     {
-        return $this->output;
+        return $this->whichOneof("output");
     }
 
 }

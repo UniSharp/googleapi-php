@@ -272,8 +272,8 @@ class ReadRowsResponse_CellChunk extends \Google\Protobuf\Internal\Message
      */
     public function setLabels(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
-        $this->labels = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->labels = $arr;
     }
 
     /**
@@ -396,7 +396,7 @@ class ReadRowsResponse_CellChunk extends \Google\Protobuf\Internal\Message
 
     public function getRowStatus()
     {
-        return $this->row_status;
+        return $this->whichOneof("row_status");
     }
 
 }

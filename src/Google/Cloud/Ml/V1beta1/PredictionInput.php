@@ -213,8 +213,8 @@ class PredictionInput extends \Google\Protobuf\Internal\Message
      */
     public function setInputPaths(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
-        $this->input_paths = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->input_paths = $arr;
     }
 
     /**
@@ -329,7 +329,7 @@ class PredictionInput extends \Google\Protobuf\Internal\Message
 
     public function getModelVersion()
     {
-        return $this->model_version;
+        return $this->whichOneof("model_version");
     }
 
 }

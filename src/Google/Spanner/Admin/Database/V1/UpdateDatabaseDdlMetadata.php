@@ -99,8 +99,8 @@ class UpdateDatabaseDdlMetadata extends \Google\Protobuf\Internal\Message
      */
     public function setStatements(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
-        $this->statements = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->statements = $arr;
     }
 
     /**
@@ -128,8 +128,8 @@ class UpdateDatabaseDdlMetadata extends \Google\Protobuf\Internal\Message
      */
     public function setCommitTimestamps(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Protobuf\Timestamp::class);
-        $this->commit_timestamps = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Protobuf\Timestamp::class);
+        $this->commit_timestamps = $arr;
     }
 
 }

@@ -64,8 +64,8 @@ class CommitResponse extends \Google\Protobuf\Internal\Message
      */
     public function setMutationResults(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Datastore\V1\MutationResult::class);
-        $this->mutation_results = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Datastore\V1\MutationResult::class);
+        $this->mutation_results = $arr;
     }
 
     /**

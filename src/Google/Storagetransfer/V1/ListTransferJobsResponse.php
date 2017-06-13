@@ -60,8 +60,8 @@ class ListTransferJobsResponse extends \Google\Protobuf\Internal\Message
      */
     public function setTransferJobs(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Storagetransfer\V1\TransferJob::class);
-        $this->transfer_jobs = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Storagetransfer\V1\TransferJob::class);
+        $this->transfer_jobs = $arr;
     }
 
     /**

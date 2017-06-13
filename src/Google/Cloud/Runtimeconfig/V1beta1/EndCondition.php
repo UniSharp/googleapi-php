@@ -51,7 +51,7 @@ class EndCondition extends \Google\Protobuf\Internal\Message
 
     public function getCondition()
     {
-        return $this->condition;
+        return $this->whichOneof("condition");
     }
 
 }

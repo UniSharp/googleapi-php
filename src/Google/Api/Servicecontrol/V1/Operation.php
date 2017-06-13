@@ -336,7 +336,8 @@ class Operation extends \Google\Protobuf\Internal\Message
      */
     public function setLabels(&$var)
     {
-        $this->labels = $var;
+        $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::STRING, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->labels = $arr;
     }
 
     /**
@@ -376,8 +377,8 @@ class Operation extends \Google\Protobuf\Internal\Message
      */
     public function setMetricValueSets(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Api\Servicecontrol\V1\MetricValueSet::class);
-        $this->metric_value_sets = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Api\Servicecontrol\V1\MetricValueSet::class);
+        $this->metric_value_sets = $arr;
     }
 
     /**
@@ -401,8 +402,8 @@ class Operation extends \Google\Protobuf\Internal\Message
      */
     public function setLogEntries(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Api\Servicecontrol\V1\LogEntry::class);
-        $this->log_entries = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Api\Servicecontrol\V1\LogEntry::class);
+        $this->log_entries = $arr;
     }
 
     /**

@@ -251,8 +251,8 @@ class ErrorGroupStats extends \Google\Protobuf\Internal\Message
      */
     public function setTimedCounts(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Devtools\Clouderrorreporting\V1beta1\TimedCount::class);
-        $this->timed_counts = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Devtools\Clouderrorreporting\V1beta1\TimedCount::class);
+        $this->timed_counts = $arr;
     }
 
     /**
@@ -338,8 +338,8 @@ class ErrorGroupStats extends \Google\Protobuf\Internal\Message
      */
     public function setAffectedServices(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Devtools\Clouderrorreporting\V1beta1\ServiceContext::class);
-        $this->affected_services = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Devtools\Clouderrorreporting\V1beta1\ServiceContext::class);
+        $this->affected_services = $arr;
     }
 
     /**

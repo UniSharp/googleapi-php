@@ -40,8 +40,8 @@ class CropHintsAnnotation extends \Google\Protobuf\Internal\Message
      */
     public function setCropHints(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Vision\V1\CropHint::class);
-        $this->crop_hints = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Vision\V1\CropHint::class);
+        $this->crop_hints = $arr;
     }
 
 }

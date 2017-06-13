@@ -52,8 +52,8 @@ class BatchAnnotateImagesResponse extends \Google\Protobuf\Internal\Message
      */
     public function setResponses(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Vision\V1\AnnotateImageResponse::class);
-        $this->responses = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Vision\V1\AnnotateImageResponse::class);
+        $this->responses = $arr;
     }
 
 }

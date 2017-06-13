@@ -80,8 +80,8 @@ class StreamingRecognitionResult extends \Google\Protobuf\Internal\Message
      */
     public function setAlternatives(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Speech\V1beta1\SpeechRecognitionAlternative::class);
-        $this->alternatives = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Speech\V1beta1\SpeechRecognitionAlternative::class);
+        $this->alternatives = $arr;
     }
 
     /**

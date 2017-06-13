@@ -128,8 +128,8 @@ class HyperparameterSpec extends \Google\Protobuf\Internal\Message
      */
     public function setParams(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Ml\V1beta1\ParameterSpec::class);
-        $this->params = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Ml\V1beta1\ParameterSpec::class);
+        $this->params = $arr;
     }
 
     /**

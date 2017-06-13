@@ -76,7 +76,7 @@ class Filter extends \Google\Protobuf\Internal\Message
 
     public function getFilterType()
     {
-        return $this->filter_type;
+        return $this->whichOneof("filter_type");
     }
 
 }

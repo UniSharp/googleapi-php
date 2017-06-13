@@ -138,7 +138,8 @@ class ControllerConfig extends \Google\Protobuf\Internal\Message
      */
     public function setVars(&$var)
     {
-        $this->vars = $var;
+        $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::STRING, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->vars = $arr;
     }
 
     /**
@@ -154,7 +155,8 @@ class ControllerConfig extends \Google\Protobuf\Internal\Message
      */
     public function setDisks(&$var)
     {
-        $this->disks = $var;
+        $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::STRING, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->disks = $arr;
     }
 
     /**
@@ -170,7 +172,8 @@ class ControllerConfig extends \Google\Protobuf\Internal\Message
      */
     public function setGcsSources(&$var)
     {
-        $this->gcs_sources = $var;
+        $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::STRING, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Genomics\V1alpha2\ControllerConfig_RepeatedString::class);
+        $this->gcs_sources = $arr;
     }
 
     /**
@@ -186,7 +189,8 @@ class ControllerConfig extends \Google\Protobuf\Internal\Message
      */
     public function setGcsSinks(&$var)
     {
-        $this->gcs_sinks = $var;
+        $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::STRING, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Genomics\V1alpha2\ControllerConfig_RepeatedString::class);
+        $this->gcs_sinks = $arr;
     }
 
 }

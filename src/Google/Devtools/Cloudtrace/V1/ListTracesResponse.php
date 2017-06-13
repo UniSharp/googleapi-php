@@ -62,8 +62,8 @@ class ListTracesResponse extends \Google\Protobuf\Internal\Message
      */
     public function setTraces(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Devtools\Cloudtrace\V1\Trace::class);
-        $this->traces = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Devtools\Cloudtrace\V1\Trace::class);
+        $this->traces = $arr;
     }
 
     /**

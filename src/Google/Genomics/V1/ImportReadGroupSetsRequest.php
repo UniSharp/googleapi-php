@@ -163,8 +163,8 @@ class ImportReadGroupSetsRequest extends \Google\Protobuf\Internal\Message
      */
     public function setSourceUris(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
-        $this->source_uris = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->source_uris = $arr;
     }
 
     /**

@@ -66,8 +66,8 @@ class TextAnnotation extends \Google\Protobuf\Internal\Message
      */
     public function setPages(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Vision\V1\Page::class);
-        $this->pages = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Vision\V1\Page::class);
+        $this->pages = $arr;
     }
 
     /**

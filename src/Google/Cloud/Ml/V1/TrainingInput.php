@@ -494,8 +494,8 @@ class TrainingInput extends \Google\Protobuf\Internal\Message
      */
     public function setPackageUris(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
-        $this->package_uris = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->package_uris = $arr;
     }
 
     /**
@@ -544,8 +544,8 @@ class TrainingInput extends \Google\Protobuf\Internal\Message
      */
     public function setArgs(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
-        $this->args = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->args = $arr;
     }
 
     /**

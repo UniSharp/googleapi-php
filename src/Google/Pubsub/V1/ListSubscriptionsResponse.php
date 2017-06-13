@@ -62,8 +62,8 @@ class ListSubscriptionsResponse extends \Google\Protobuf\Internal\Message
      */
     public function setSubscriptions(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Pubsub\V1\Subscription::class);
-        $this->subscriptions = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Pubsub\V1\Subscription::class);
+        $this->subscriptions = $arr;
     }
 
     /**

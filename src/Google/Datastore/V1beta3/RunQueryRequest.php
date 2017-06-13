@@ -184,7 +184,7 @@ class RunQueryRequest extends \Google\Protobuf\Internal\Message
 
     public function getQueryType()
     {
-        return $this->query_type;
+        return $this->whichOneof("query_type");
     }
 
 }

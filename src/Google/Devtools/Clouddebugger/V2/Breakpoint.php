@@ -324,8 +324,8 @@ class Breakpoint extends \Google\Protobuf\Internal\Message
      */
     public function setExpressions(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
-        $this->expressions = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->expressions = $arr;
     }
 
     /**
@@ -558,8 +558,8 @@ class Breakpoint extends \Google\Protobuf\Internal\Message
      */
     public function setStackFrames(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Devtools\Clouddebugger\V2\StackFrame::class);
-        $this->stack_frames = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Devtools\Clouddebugger\V2\StackFrame::class);
+        $this->stack_frames = $arr;
     }
 
     /**
@@ -595,8 +595,8 @@ class Breakpoint extends \Google\Protobuf\Internal\Message
      */
     public function setEvaluatedExpressions(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Devtools\Clouddebugger\V2\Variable::class);
-        $this->evaluated_expressions = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Devtools\Clouddebugger\V2\Variable::class);
+        $this->evaluated_expressions = $arr;
     }
 
     /**
@@ -640,8 +640,8 @@ class Breakpoint extends \Google\Protobuf\Internal\Message
      */
     public function setVariableTable(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Devtools\Clouddebugger\V2\Variable::class);
-        $this->variable_table = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Devtools\Clouddebugger\V2\Variable::class);
+        $this->variable_table = $arr;
     }
 
     /**
@@ -667,7 +667,8 @@ class Breakpoint extends \Google\Protobuf\Internal\Message
      */
     public function setLabels(&$var)
     {
-        $this->labels = $var;
+        $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::STRING, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->labels = $arr;
     }
 
 }

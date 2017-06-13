@@ -94,8 +94,8 @@ class AnnotateImageRequest extends \Google\Protobuf\Internal\Message
      */
     public function setFeatures(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Vision\V1\Feature::class);
-        $this->features = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Vision\V1\Feature::class);
+        $this->features = $arr;
     }
 
     /**

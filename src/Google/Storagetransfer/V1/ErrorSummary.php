@@ -122,8 +122,8 @@ class ErrorSummary extends \Google\Protobuf\Internal\Message
      */
     public function setErrorLogEntries(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Storagetransfer\V1\ErrorLogEntry::class);
-        $this->error_log_entries = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Storagetransfer\V1\ErrorLogEntry::class);
+        $this->error_log_entries = $arr;
     }
 
 }

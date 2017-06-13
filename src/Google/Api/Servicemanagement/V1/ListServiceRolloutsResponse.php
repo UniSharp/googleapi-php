@@ -60,8 +60,8 @@ class ListServiceRolloutsResponse extends \Google\Protobuf\Internal\Message
      */
     public function setRollouts(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Api\Servicemanagement\V1\Rollout::class);
-        $this->rollouts = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Api\Servicemanagement\V1\Rollout::class);
+        $this->rollouts = $arr;
     }
 
     /**

@@ -60,8 +60,8 @@ class DebugInfo extends \Google\Protobuf\Internal\Message
      */
     public function setStackEntries(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
-        $this->stack_entries = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->stack_entries = $arr;
     }
 
     /**

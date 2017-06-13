@@ -60,8 +60,8 @@ class ListServiceConfigsResponse extends \Google\Protobuf\Internal\Message
      */
     public function setServiceConfigs(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Api\Service::class);
-        $this->service_configs = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Api\Service::class);
+        $this->service_configs = $arr;
     }
 
     /**

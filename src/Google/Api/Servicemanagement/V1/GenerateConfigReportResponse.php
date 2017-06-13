@@ -131,8 +131,8 @@ class GenerateConfigReportResponse extends \Google\Protobuf\Internal\Message
      */
     public function setChangeReports(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Api\Servicemanagement\V1\ChangeReport::class);
-        $this->change_reports = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Api\Servicemanagement\V1\ChangeReport::class);
+        $this->change_reports = $arr;
     }
 
     /**
@@ -160,8 +160,8 @@ class GenerateConfigReportResponse extends \Google\Protobuf\Internal\Message
      */
     public function setDiagnostics(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Api\Servicemanagement\V1\Diagnostic::class);
-        $this->diagnostics = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Api\Servicemanagement\V1\Diagnostic::class);
+        $this->diagnostics = $arr;
     }
 
 }

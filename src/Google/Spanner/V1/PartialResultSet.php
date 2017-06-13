@@ -297,8 +297,8 @@ class PartialResultSet extends \Google\Protobuf\Internal\Message
      */
     public function setValues(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Protobuf\Value::class);
-        $this->values = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Protobuf\Value::class);
+        $this->values = $arr;
     }
 
     /**

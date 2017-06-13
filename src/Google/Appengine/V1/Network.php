@@ -73,8 +73,8 @@ class Network extends \Google\Protobuf\Internal\Message
      */
     public function setForwardedPorts(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
-        $this->forwarded_ports = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->forwarded_ports = $arr;
     }
 
     /**

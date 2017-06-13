@@ -110,8 +110,8 @@ class IssueTaxonomy_Component extends \Google\Protobuf\Internal\Message
      */
     public function setLanguages(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
-        $this->languages = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->languages = $arr;
     }
 
     /**
@@ -160,8 +160,8 @@ class IssueTaxonomy_Component extends \Google\Protobuf\Internal\Message
      */
     public function setSubcomponents(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Support\Common\IssueTaxonomy_Component::class);
-        $this->subcomponents = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Support\Common\IssueTaxonomy_Component::class);
+        $this->subcomponents = $arr;
     }
 
 }

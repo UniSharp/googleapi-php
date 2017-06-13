@@ -91,8 +91,8 @@ class ErrorLogEntry extends \Google\Protobuf\Internal\Message
      */
     public function setErrorDetails(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
-        $this->error_details = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->error_details = $arr;
     }
 
 }

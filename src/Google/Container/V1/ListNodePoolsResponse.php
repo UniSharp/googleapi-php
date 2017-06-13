@@ -52,8 +52,8 @@ class ListNodePoolsResponse extends \Google\Protobuf\Internal\Message
      */
     public function setNodePools(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Container\V1\NodePool::class);
-        $this->node_pools = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Container\V1\NodePool::class);
+        $this->node_pools = $arr;
     }
 
 }

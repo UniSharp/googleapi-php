@@ -64,8 +64,8 @@ class MutateRowsResponse extends \Google\Protobuf\Internal\Message
      */
     public function setStatuses(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Rpc\Status::class);
-        $this->statuses = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Rpc\Status::class);
+        $this->statuses = $arr;
     }
 
 }

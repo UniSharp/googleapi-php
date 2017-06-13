@@ -185,8 +185,8 @@ class QueryResultBatch extends \Google\Protobuf\Internal\Message
      */
     public function setEntityResults(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Datastore\V1\EntityResult::class);
-        $this->entity_results = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Datastore\V1\EntityResult::class);
+        $this->entity_results = $arr;
     }
 
     /**

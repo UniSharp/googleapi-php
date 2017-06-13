@@ -247,7 +247,7 @@ class TransactionOptions_ReadOnly extends \Google\Protobuf\Internal\Message
 
     public function getTimestampBound()
     {
-        return $this->timestamp_bound;
+        return $this->whichOneof("timestamp_bound");
     }
 
 }

@@ -162,7 +162,7 @@ class ReadModifyWriteRule extends \Google\Protobuf\Internal\Message
 
     public function getRule()
     {
-        return $this->rule;
+        return $this->whichOneof("rule");
     }
 
 }

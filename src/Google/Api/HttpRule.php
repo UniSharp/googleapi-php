@@ -449,13 +449,13 @@ class HttpRule extends \Google\Protobuf\Internal\Message
      */
     public function setAdditionalBindings(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Api\HttpRule::class);
-        $this->additional_bindings = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Api\HttpRule::class);
+        $this->additional_bindings = $arr;
     }
 
     public function getPattern()
     {
-        return $this->pattern;
+        return $this->whichOneof("pattern");
     }
 
 }

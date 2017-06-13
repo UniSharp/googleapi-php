@@ -52,8 +52,8 @@ class ImportVariantsResponse extends \Google\Protobuf\Internal\Message
      */
     public function setCallSetIds(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
-        $this->call_set_ids = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->call_set_ids = $arr;
     }
 
 }

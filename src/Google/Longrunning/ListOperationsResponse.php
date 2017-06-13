@@ -60,8 +60,8 @@ class ListOperationsResponse extends \Google\Protobuf\Internal\Message
      */
     public function setOperations(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Longrunning\Operation::class);
-        $this->operations = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Longrunning\Operation::class);
+        $this->operations = $arr;
     }
 
     /**

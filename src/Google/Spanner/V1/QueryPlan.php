@@ -58,8 +58,8 @@ class QueryPlan extends \Google\Protobuf\Internal\Message
      */
     public function setPlanNodes(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Spanner\V1\PlanNode::class);
-        $this->plan_nodes = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Spanner\V1\PlanNode::class);
+        $this->plan_nodes = $arr;
     }
 
 }

@@ -95,8 +95,8 @@ class Row extends \Google\Protobuf\Internal\Message
      */
     public function setFamilies(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Bigtable\V2\Family::class);
-        $this->families = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Bigtable\V2\Family::class);
+        $this->families = $arr;
     }
 
 }

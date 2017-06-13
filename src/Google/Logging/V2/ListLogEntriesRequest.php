@@ -126,8 +126,8 @@ class ListLogEntriesRequest extends \Google\Protobuf\Internal\Message
      */
     public function setProjectIds(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
-        $this->project_ids = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->project_ids = $arr;
     }
 
     /**
@@ -163,8 +163,8 @@ class ListLogEntriesRequest extends \Google\Protobuf\Internal\Message
      */
     public function setResourceNames(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
-        $this->resource_names = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->resource_names = $arr;
     }
 
     /**

@@ -61,8 +61,8 @@ class ListOperationsResponse extends \Google\Protobuf\Internal\Message
      */
     public function setOperations(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Container\V1\Operation::class);
-        $this->operations = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Container\V1\Operation::class);
+        $this->operations = $arr;
     }
 
     /**
@@ -88,8 +88,8 @@ class ListOperationsResponse extends \Google\Protobuf\Internal\Message
      */
     public function setMissingZones(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
-        $this->missing_zones = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->missing_zones = $arr;
     }
 
 }

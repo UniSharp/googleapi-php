@@ -158,7 +158,8 @@ class Entity extends \Google\Protobuf\Internal\Message
      */
     public function setMetadata(&$var)
     {
-        $this->metadata = $var;
+        $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::STRING, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->metadata = $arr;
     }
 
     /**
@@ -217,8 +218,8 @@ class Entity extends \Google\Protobuf\Internal\Message
      */
     public function setMentions(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Language\V1beta2\EntityMention::class);
-        $this->mentions = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Language\V1beta2\EntityMention::class);
+        $this->mentions = $arr;
     }
 
     /**

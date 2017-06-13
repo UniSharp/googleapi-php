@@ -62,8 +62,8 @@ class ListSupportAccountsResponse extends \Google\Protobuf\Internal\Message
      */
     public function setAccounts(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Support\Common\SupportAccount::class);
-        $this->accounts = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Support\Common\SupportAccount::class);
+        $this->accounts = $arr;
     }
 
     /**

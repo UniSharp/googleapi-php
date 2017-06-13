@@ -339,8 +339,8 @@ class Job extends \Google\Protobuf\Internal\Message
      */
     public function setStatusHistory(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Dataproc\V1\JobStatus::class);
-        $this->status_history = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Dataproc\V1\JobStatus::class);
+        $this->status_history = $arr;
     }
 
     /**
@@ -401,7 +401,7 @@ class Job extends \Google\Protobuf\Internal\Message
 
     public function getTypeJob()
     {
-        return $this->type_job;
+        return $this->whichOneof("type_job");
     }
 
 }

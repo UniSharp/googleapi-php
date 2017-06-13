@@ -119,7 +119,7 @@ class Distribution_BucketOptions extends \Google\Protobuf\Internal\Message
 
     public function getOptions()
     {
-        return $this->options;
+        return $this->whichOneof("options");
     }
 
 }

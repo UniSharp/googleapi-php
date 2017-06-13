@@ -52,8 +52,8 @@ class ChangeBatch extends \Google\Protobuf\Internal\Message
      */
     public function setChanges(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Watcher\V1\Change::class);
-        $this->changes = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Watcher\V1\Change::class);
+        $this->changes = $arr;
     }
 
 }

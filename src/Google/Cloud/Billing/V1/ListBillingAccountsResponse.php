@@ -62,8 +62,8 @@ class ListBillingAccountsResponse extends \Google\Protobuf\Internal\Message
      */
     public function setBillingAccounts(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Billing\V1\BillingAccount::class);
-        $this->billing_accounts = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Billing\V1\BillingAccount::class);
+        $this->billing_accounts = $arr;
     }
 
     /**

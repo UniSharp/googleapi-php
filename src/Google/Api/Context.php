@@ -67,8 +67,8 @@ class Context extends \Google\Protobuf\Internal\Message
      */
     public function setRules(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Api\ContextRule::class);
-        $this->rules = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Api\ContextRule::class);
+        $this->rules = $arr;
     }
 
 }

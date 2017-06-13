@@ -115,8 +115,8 @@ class Key extends \Google\Protobuf\Internal\Message
      */
     public function setPath(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Privacy\Dlp\V2beta1\Key_PathElement::class);
-        $this->path = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Privacy\Dlp\V2beta1\Key_PathElement::class);
+        $this->path = $arr;
     }
 
 }

@@ -176,7 +176,8 @@ class RunPipelineArgs extends \Google\Protobuf\Internal\Message
      */
     public function setInputs(&$var)
     {
-        $this->inputs = $var;
+        $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::STRING, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->inputs = $arr;
     }
 
     /**
@@ -206,7 +207,8 @@ class RunPipelineArgs extends \Google\Protobuf\Internal\Message
      */
     public function setOutputs(&$var)
     {
-        $this->outputs = $var;
+        $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::STRING, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->outputs = $arr;
     }
 
     /**
@@ -389,7 +391,8 @@ class RunPipelineArgs extends \Google\Protobuf\Internal\Message
      */
     public function setLabels(&$var)
     {
-        $this->labels = $var;
+        $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::STRING, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->labels = $arr;
     }
 
 }

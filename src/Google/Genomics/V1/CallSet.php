@@ -183,8 +183,8 @@ class CallSet extends \Google\Protobuf\Internal\Message
      */
     public function setVariantSetIds(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
-        $this->variant_set_ids = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->variant_set_ids = $arr;
     }
 
     /**
@@ -235,7 +235,8 @@ class CallSet extends \Google\Protobuf\Internal\Message
      */
     public function setInfo(&$var)
     {
-        $this->info = $var;
+        $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::STRING, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Protobuf\ListValue::class);
+        $this->info = $arr;
     }
 
 }

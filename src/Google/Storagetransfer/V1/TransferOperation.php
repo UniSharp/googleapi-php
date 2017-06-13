@@ -297,8 +297,8 @@ class TransferOperation extends \Google\Protobuf\Internal\Message
      */
     public function setErrorBreakdowns(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Storagetransfer\V1\ErrorSummary::class);
-        $this->error_breakdowns = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Storagetransfer\V1\ErrorSummary::class);
+        $this->error_breakdowns = $arr;
     }
 
     /**

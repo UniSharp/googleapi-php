@@ -52,8 +52,8 @@ class ListCommentsResponse extends \Google\Protobuf\Internal\Message
      */
     public function setComments(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Support\Common\Comment::class);
-        $this->comments = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Support\Common\Comment::class);
+        $this->comments = $arr;
     }
 
 }

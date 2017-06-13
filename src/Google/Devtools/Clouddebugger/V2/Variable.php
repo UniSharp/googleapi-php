@@ -272,8 +272,8 @@ class Variable extends \Google\Protobuf\Internal\Message
      */
     public function setMembers(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Devtools\Clouddebugger\V2\Variable::class);
-        $this->members = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Devtools\Clouddebugger\V2\Variable::class);
+        $this->members = $arr;
     }
 
     /**

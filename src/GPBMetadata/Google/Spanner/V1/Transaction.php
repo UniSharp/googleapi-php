@@ -18,9 +18,8 @@ class Transaction
         \GPBMetadata\Google\Protobuf\Duration::initOnce();
         \GPBMetadata\Google\Protobuf\Timestamp::initOnce();
         $pool->internalAddGeneratedFile(hex2bin(
-            "0af9070a23676f6f676c652f7370616e6e65722f76312f7472616e736163" .
+            "0adb070a23676f6f676c652f7370616e6e65722f76312f7472616e736163" .
             "74696f6e2e70726f746f1211676f6f676c652e7370616e6e65722e76311a" .
-            "1c676f6f676c652f6170692f616e6e6f746174696f6e732e70726f746f1a" .
             "1e676f6f676c652f70726f746f6275662f6475726174696f6e2e70726f74" .
             "6f1a1f676f6f676c652f70726f746f6275662f74696d657374616d702e70" .
             "726f746f22e0030a125472616e73616374696f6e4f7074696f6e7312450a" .

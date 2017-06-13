@@ -177,8 +177,8 @@ class Documentation extends \Google\Protobuf\Internal\Message
      */
     public function setPages(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Api\Page::class);
-        $this->pages = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Api\Page::class);
+        $this->pages = $arr;
     }
 
     /**
@@ -204,8 +204,8 @@ class Documentation extends \Google\Protobuf\Internal\Message
      */
     public function setRules(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Api\DocumentationRule::class);
-        $this->rules = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Api\DocumentationRule::class);
+        $this->rules = $arr;
     }
 
     /**

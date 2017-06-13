@@ -113,8 +113,8 @@ class VideoContext extends \Google\Protobuf\Internal\Message
      */
     public function setSegments(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Videointelligence\V1beta1\VideoSegment::class);
-        $this->segments = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Videointelligence\V1beta1\VideoSegment::class);
+        $this->segments = $arr;
     }
 
     /**

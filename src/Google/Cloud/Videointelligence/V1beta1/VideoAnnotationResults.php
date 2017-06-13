@@ -121,8 +121,8 @@ class VideoAnnotationResults extends \Google\Protobuf\Internal\Message
      */
     public function setLabelAnnotations(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Videointelligence\V1beta1\LabelAnnotation::class);
-        $this->label_annotations = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Videointelligence\V1beta1\LabelAnnotation::class);
+        $this->label_annotations = $arr;
     }
 
     /**
@@ -146,8 +146,8 @@ class VideoAnnotationResults extends \Google\Protobuf\Internal\Message
      */
     public function setFaceAnnotations(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Videointelligence\V1beta1\FaceAnnotation::class);
-        $this->face_annotations = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Videointelligence\V1beta1\FaceAnnotation::class);
+        $this->face_annotations = $arr;
     }
 
     /**
@@ -171,8 +171,8 @@ class VideoAnnotationResults extends \Google\Protobuf\Internal\Message
      */
     public function setShotAnnotations(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Videointelligence\V1beta1\VideoSegment::class);
-        $this->shot_annotations = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Videointelligence\V1beta1\VideoSegment::class);
+        $this->shot_annotations = $arr;
     }
 
     /**
@@ -196,8 +196,8 @@ class VideoAnnotationResults extends \Google\Protobuf\Internal\Message
      */
     public function setSafeSearchAnnotations(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Videointelligence\V1beta1\SafeSearchAnnotation::class);
-        $this->safe_search_annotations = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Videointelligence\V1beta1\SafeSearchAnnotation::class);
+        $this->safe_search_annotations = $arr;
     }
 
     /**

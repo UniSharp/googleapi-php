@@ -205,8 +205,8 @@ class VariantSet extends \Google\Protobuf\Internal\Message
      */
     public function setReferenceBounds(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Genomics\V1\ReferenceBound::class);
-        $this->reference_bounds = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Genomics\V1\ReferenceBound::class);
+        $this->reference_bounds = $arr;
     }
 
     /**
@@ -230,8 +230,8 @@ class VariantSet extends \Google\Protobuf\Internal\Message
      */
     public function setMetadata(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Genomics\V1\VariantSetMetadata::class);
-        $this->metadata = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Genomics\V1\VariantSetMetadata::class);
+        $this->metadata = $arr;
     }
 
     /**

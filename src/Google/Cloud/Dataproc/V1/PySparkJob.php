@@ -151,8 +151,8 @@ class PySparkJob extends \Google\Protobuf\Internal\Message
      */
     public function setArgs(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
-        $this->args = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->args = $arr;
     }
 
     /**
@@ -178,8 +178,8 @@ class PySparkJob extends \Google\Protobuf\Internal\Message
      */
     public function setPythonFileUris(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
-        $this->python_file_uris = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->python_file_uris = $arr;
     }
 
     /**
@@ -205,8 +205,8 @@ class PySparkJob extends \Google\Protobuf\Internal\Message
      */
     public function setJarFileUris(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
-        $this->jar_file_uris = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->jar_file_uris = $arr;
     }
 
     /**
@@ -232,8 +232,8 @@ class PySparkJob extends \Google\Protobuf\Internal\Message
      */
     public function setFileUris(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
-        $this->file_uris = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->file_uris = $arr;
     }
 
     /**
@@ -259,8 +259,8 @@ class PySparkJob extends \Google\Protobuf\Internal\Message
      */
     public function setArchiveUris(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
-        $this->archive_uris = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->archive_uris = $arr;
     }
 
     /**
@@ -290,7 +290,8 @@ class PySparkJob extends \Google\Protobuf\Internal\Message
      */
     public function setProperties(&$var)
     {
-        $this->properties = $var;
+        $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::STRING, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->properties = $arr;
     }
 
     /**

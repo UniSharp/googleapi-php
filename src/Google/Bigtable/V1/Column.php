@@ -97,8 +97,8 @@ class Column extends \Google\Protobuf\Internal\Message
      */
     public function setCells(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Bigtable\V1\Cell::class);
-        $this->cells = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Bigtable\V1\Cell::class);
+        $this->cells = $arr;
     }
 
 }

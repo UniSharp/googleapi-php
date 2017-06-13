@@ -204,8 +204,8 @@ class Application extends \Google\Protobuf\Internal\Message
      */
     public function setDispatchRules(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Appengine\V1\UrlDispatchRule::class);
-        $this->dispatch_rules = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Appengine\V1\UrlDispatchRule::class);
+        $this->dispatch_rules = $arr;
     }
 
     /**

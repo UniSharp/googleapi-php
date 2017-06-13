@@ -313,8 +313,8 @@ class ClusterUpdate extends \Google\Protobuf\Internal\Message
      */
     public function setDesiredLocations(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
-        $this->desired_locations = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->desired_locations = $arr;
     }
 
     /**

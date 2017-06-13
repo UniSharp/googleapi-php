@@ -119,8 +119,8 @@ class RowFilter_Interleave extends \Google\Protobuf\Internal\Message
      */
     public function setFilters(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Bigtable\V2\RowFilter::class);
-        $this->filters = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Bigtable\V2\RowFilter::class);
+        $this->filters = $arr;
     }
 
 }

@@ -109,8 +109,8 @@ class ServerConfig extends \Google\Protobuf\Internal\Message
      */
     public function setValidNodeVersions(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
-        $this->valid_node_versions = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->valid_node_versions = $arr;
     }
 
     /**
@@ -159,8 +159,8 @@ class ServerConfig extends \Google\Protobuf\Internal\Message
      */
     public function setValidImageTypes(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
-        $this->valid_image_types = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->valid_image_types = $arr;
     }
 
     /**
@@ -184,8 +184,8 @@ class ServerConfig extends \Google\Protobuf\Internal\Message
      */
     public function setValidMasterVersions(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
-        $this->valid_master_versions = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->valid_master_versions = $arr;
     }
 
 }

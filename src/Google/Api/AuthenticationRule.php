@@ -175,8 +175,8 @@ class AuthenticationRule extends \Google\Protobuf\Internal\Message
      */
     public function setRequirements(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Api\AuthRequirement::class);
-        $this->requirements = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Api\AuthRequirement::class);
+        $this->requirements = $arr;
     }
 
 }

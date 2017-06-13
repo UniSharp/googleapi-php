@@ -242,8 +242,8 @@ class Reference extends \Google\Protobuf\Internal\Message
      */
     public function setSourceAccessions(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
-        $this->source_accessions = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->source_accessions = $arr;
     }
 
     /**

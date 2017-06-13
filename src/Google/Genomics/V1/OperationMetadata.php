@@ -255,8 +255,8 @@ class OperationMetadata extends \Google\Protobuf\Internal\Message
      */
     public function setEvents(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Genomics\V1\OperationEvent::class);
-        $this->events = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Genomics\V1\OperationEvent::class);
+        $this->events = $arr;
     }
 
     /**
@@ -334,7 +334,8 @@ class OperationMetadata extends \Google\Protobuf\Internal\Message
      */
     public function setLabels(&$var)
     {
-        $this->labels = $var;
+        $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::STRING, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->labels = $arr;
     }
 
 }

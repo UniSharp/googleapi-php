@@ -113,7 +113,8 @@ class TrafficSplit extends \Google\Protobuf\Internal\Message
      */
     public function setAllocations(&$var)
     {
-        $this->allocations = $var;
+        $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::STRING, \Google\Protobuf\Internal\GPBType::DOUBLE);
+        $this->allocations = $arr;
     }
 
 }

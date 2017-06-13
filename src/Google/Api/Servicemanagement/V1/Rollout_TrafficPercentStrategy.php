@@ -82,7 +82,8 @@ class Rollout_TrafficPercentStrategy extends \Google\Protobuf\Internal\Message
      */
     public function setPercentages(&$var)
     {
-        $this->percentages = $var;
+        $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::STRING, \Google\Protobuf\Internal\GPBType::DOUBLE);
+        $this->percentages = $arr;
     }
 
 }

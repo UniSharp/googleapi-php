@@ -93,7 +93,7 @@ class RecognitionAudio extends \Google\Protobuf\Internal\Message
 
     public function getAudioSource()
     {
-        return $this->audio_source;
+        return $this->whichOneof("audio_source");
     }
 
 }

@@ -429,8 +429,8 @@ class Version extends \Google\Protobuf\Internal\Message
      */
     public function setInboundServices(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, Google\Appengine\V1\InboundServiceType::class);
-        $this->inbound_services = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, \Google\Appengine\V1\InboundServiceType::class);
+        $this->inbound_services = $arr;
     }
 
     /**
@@ -614,7 +614,8 @@ class Version extends \Google\Protobuf\Internal\Message
      */
     public function setBetaSettings(&$var)
     {
-        $this->beta_settings = $var;
+        $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::STRING, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->beta_settings = $arr;
     }
 
     /**
@@ -783,8 +784,8 @@ class Version extends \Google\Protobuf\Internal\Message
      */
     public function setHandlers(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Appengine\V1\UrlMap::class);
-        $this->handlers = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Appengine\V1\UrlMap::class);
+        $this->handlers = $arr;
     }
 
     /**
@@ -810,8 +811,8 @@ class Version extends \Google\Protobuf\Internal\Message
      */
     public function setErrorHandlers(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Appengine\V1\ErrorHandler::class);
-        $this->error_handlers = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Appengine\V1\ErrorHandler::class);
+        $this->error_handlers = $arr;
     }
 
     /**
@@ -839,8 +840,8 @@ class Version extends \Google\Protobuf\Internal\Message
      */
     public function setLibraries(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Appengine\V1\Library::class);
-        $this->libraries = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Appengine\V1\Library::class);
+        $this->libraries = $arr;
     }
 
     /**
@@ -895,7 +896,8 @@ class Version extends \Google\Protobuf\Internal\Message
      */
     public function setEnvVariables(&$var)
     {
-        $this->env_variables = $var;
+        $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::STRING, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->env_variables = $arr;
     }
 
     /**
@@ -1049,7 +1051,7 @@ class Version extends \Google\Protobuf\Internal\Message
 
     public function getScaling()
     {
-        return $this->scaling;
+        return $this->whichOneof("scaling");
     }
 
 }

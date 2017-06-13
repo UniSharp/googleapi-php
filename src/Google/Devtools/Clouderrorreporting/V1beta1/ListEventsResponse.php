@@ -70,8 +70,8 @@ class ListEventsResponse extends \Google\Protobuf\Internal\Message
      */
     public function setErrorEvents(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Devtools\Clouderrorreporting\V1beta1\ErrorEvent::class);
-        $this->error_events = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Devtools\Clouderrorreporting\V1beta1\ErrorEvent::class);
+        $this->error_events = $arr;
     }
 
     /**

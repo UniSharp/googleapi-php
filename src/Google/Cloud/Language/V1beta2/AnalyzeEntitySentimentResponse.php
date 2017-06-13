@@ -62,8 +62,8 @@ class AnalyzeEntitySentimentResponse extends \Google\Protobuf\Internal\Message
      */
     public function setEntities(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Language\V1beta2\Entity::class);
-        $this->entities = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Language\V1beta2\Entity::class);
+        $this->entities = $arr;
     }
 
     /**

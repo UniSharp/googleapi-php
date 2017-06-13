@@ -66,8 +66,8 @@ class ChangeReport extends \Google\Protobuf\Internal\Message
      */
     public function setConfigChanges(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Api\ConfigChange::class);
-        $this->config_changes = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Api\ConfigChange::class);
+        $this->config_changes = $arr;
     }
 
 }

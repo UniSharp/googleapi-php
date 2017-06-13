@@ -20,9 +20,8 @@ class Version
         \GPBMetadata\Google\Protobuf\Duration::initOnce();
         \GPBMetadata\Google\Protobuf\Timestamp::initOnce();
         $pool->internalAddGeneratedFile(hex2bin(
-            "0a8d1b0a21676f6f676c652f617070656e67696e652f76312f7665727369" .
+            "0aef1a0a21676f6f676c652f617070656e67696e652f76312f7665727369" .
             "6f6e2e70726f746f1213676f6f676c652e617070656e67696e652e76311a" .
-            "1c676f6f676c652f6170692f616e6e6f746174696f6e732e70726f746f1a" .
             "22676f6f676c652f617070656e67696e652f76312f6170705f79616d6c2e" .
             "70726f746f1a20676f6f676c652f617070656e67696e652f76312f646570" .
             "6c6f792e70726f746f1a1e676f6f676c652f70726f746f6275662f647572" .

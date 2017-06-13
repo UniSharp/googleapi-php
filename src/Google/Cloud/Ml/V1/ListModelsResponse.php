@@ -61,8 +61,8 @@ class ListModelsResponse extends \Google\Protobuf\Internal\Message
      */
     public function setModels(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Ml\V1\Model::class);
-        $this->models = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Ml\V1\Model::class);
+        $this->models = $arr;
     }
 
     /**

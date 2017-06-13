@@ -194,12 +194,12 @@ class KeyRange extends \Google\Protobuf\Internal\Message
 
     public function getStartKeyType()
     {
-        return $this->start_key_type;
+        return $this->whichOneof("start_key_type");
     }
 
     public function getEndKeyType()
     {
-        return $this->end_key_type;
+        return $this->whichOneof("end_key_type");
     }
 
 }

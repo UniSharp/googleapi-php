@@ -102,8 +102,8 @@ class ModifyAckDeadlineRequest extends \Google\Protobuf\Internal\Message
      */
     public function setAckIds(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
-        $this->ack_ids = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->ack_ids = $arr;
     }
 
     /**

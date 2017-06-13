@@ -139,8 +139,8 @@ class StreamingRecognizeResponse extends \Google\Protobuf\Internal\Message
      */
     public function setResults(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Speech\V1\StreamingRecognitionResult::class);
-        $this->results = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Speech\V1\StreamingRecognitionResult::class);
+        $this->results = $arr;
     }
 
     /**

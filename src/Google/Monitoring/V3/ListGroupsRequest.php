@@ -227,7 +227,7 @@ class ListGroupsRequest extends \Google\Protobuf\Internal\Message
 
     public function getFilter()
     {
-        return $this->filter;
+        return $this->whichOneof("filter");
     }
 
 }

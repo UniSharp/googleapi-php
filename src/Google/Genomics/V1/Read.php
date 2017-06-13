@@ -712,8 +712,8 @@ class Read extends \Google\Protobuf\Internal\Message
      */
     public function setAlignedQuality(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::INT32);
-        $this->aligned_quality = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::INT32);
+        $this->aligned_quality = $arr;
     }
 
     /**
@@ -768,7 +768,8 @@ class Read extends \Google\Protobuf\Internal\Message
      */
     public function setInfo(&$var)
     {
-        $this->info = $var;
+        $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::STRING, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Protobuf\ListValue::class);
+        $this->info = $arr;
     }
 
 }

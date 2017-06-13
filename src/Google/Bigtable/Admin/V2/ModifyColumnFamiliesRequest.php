@@ -101,8 +101,8 @@ class ModifyColumnFamiliesRequest extends \Google\Protobuf\Internal\Message
      */
     public function setModifications(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Bigtable\Admin\V2\ModifyColumnFamiliesRequest_Modification::class);
-        $this->modifications = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Bigtable\Admin\V2\ModifyColumnFamiliesRequest_Modification::class);
+        $this->modifications = $arr;
     }
 
 }

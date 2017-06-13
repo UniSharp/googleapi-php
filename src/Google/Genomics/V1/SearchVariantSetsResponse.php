@@ -62,8 +62,8 @@ class SearchVariantSetsResponse extends \Google\Protobuf\Internal\Message
      */
     public function setVariantSets(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Genomics\V1\VariantSet::class);
-        $this->variant_sets = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Genomics\V1\VariantSet::class);
+        $this->variant_sets = $arr;
     }
 
     /**

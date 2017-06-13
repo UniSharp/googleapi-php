@@ -329,8 +329,8 @@ class AuditLog extends \Google\Protobuf\Internal\Message
      */
     public function setAuthorizationInfo(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Audit\AuthorizationInfo::class);
-        $this->authorization_info = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Audit\AuthorizationInfo::class);
+        $this->authorization_info = $arr;
     }
 
     /**

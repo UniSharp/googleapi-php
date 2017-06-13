@@ -60,7 +60,7 @@ class RecordKey extends \Google\Protobuf\Internal\Message
 
     public function getType()
     {
-        return $this->type;
+        return $this->whichOneof("type");
     }
 
 }

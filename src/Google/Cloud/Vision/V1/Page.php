@@ -151,8 +151,8 @@ class Page extends \Google\Protobuf\Internal\Message
      */
     public function setBlocks(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Vision\V1\Block::class);
-        $this->blocks = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Vision\V1\Block::class);
+        $this->blocks = $arr;
     }
 
 }

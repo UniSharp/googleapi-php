@@ -67,8 +67,8 @@ class CropHintsParams extends \Google\Protobuf\Internal\Message
      */
     public function setAspectRatios(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::FLOAT);
-        $this->aspect_ratios = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::FLOAT);
+        $this->aspect_ratios = $arr;
     }
 
 }

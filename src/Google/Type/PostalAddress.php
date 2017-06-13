@@ -494,8 +494,8 @@ class PostalAddress extends \Google\Protobuf\Internal\Message
      */
     public function setAddressLines(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
-        $this->address_lines = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->address_lines = $arr;
     }
 
     /**
@@ -523,8 +523,8 @@ class PostalAddress extends \Google\Protobuf\Internal\Message
      */
     public function setRecipients(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
-        $this->recipients = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->recipients = $arr;
     }
 
     /**

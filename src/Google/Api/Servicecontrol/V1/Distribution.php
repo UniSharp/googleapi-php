@@ -260,8 +260,8 @@ class Distribution extends \Google\Protobuf\Internal\Message
      */
     public function setBucketCounts(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::INT64);
-        $this->bucket_counts = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::INT64);
+        $this->bucket_counts = $arr;
     }
 
     /**
@@ -341,7 +341,7 @@ class Distribution extends \Google\Protobuf\Internal\Message
 
     public function getBucketOption()
     {
-        return $this->bucket_option;
+        return $this->whichOneof("bucket_option");
     }
 
 }

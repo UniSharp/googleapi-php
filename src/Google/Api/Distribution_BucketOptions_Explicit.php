@@ -59,8 +59,8 @@ class Distribution_BucketOptions_Explicit extends \Google\Protobuf\Internal\Mess
      */
     public function setBounds(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::DOUBLE);
-        $this->bounds = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::DOUBLE);
+        $this->bounds = $arr;
     }
 
 }

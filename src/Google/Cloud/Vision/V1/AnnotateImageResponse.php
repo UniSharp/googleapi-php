@@ -138,8 +138,8 @@ class AnnotateImageResponse extends \Google\Protobuf\Internal\Message
      */
     public function setFaceAnnotations(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Vision\V1\FaceAnnotation::class);
-        $this->face_annotations = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Vision\V1\FaceAnnotation::class);
+        $this->face_annotations = $arr;
     }
 
     /**
@@ -163,8 +163,8 @@ class AnnotateImageResponse extends \Google\Protobuf\Internal\Message
      */
     public function setLandmarkAnnotations(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Vision\V1\EntityAnnotation::class);
-        $this->landmark_annotations = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Vision\V1\EntityAnnotation::class);
+        $this->landmark_annotations = $arr;
     }
 
     /**
@@ -188,8 +188,8 @@ class AnnotateImageResponse extends \Google\Protobuf\Internal\Message
      */
     public function setLogoAnnotations(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Vision\V1\EntityAnnotation::class);
-        $this->logo_annotations = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Vision\V1\EntityAnnotation::class);
+        $this->logo_annotations = $arr;
     }
 
     /**
@@ -213,8 +213,8 @@ class AnnotateImageResponse extends \Google\Protobuf\Internal\Message
      */
     public function setLabelAnnotations(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Vision\V1\EntityAnnotation::class);
-        $this->label_annotations = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Vision\V1\EntityAnnotation::class);
+        $this->label_annotations = $arr;
     }
 
     /**
@@ -240,8 +240,8 @@ class AnnotateImageResponse extends \Google\Protobuf\Internal\Message
      */
     public function setTextAnnotations(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Vision\V1\EntityAnnotation::class);
-        $this->text_annotations = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Vision\V1\EntityAnnotation::class);
+        $this->text_annotations = $arr;
     }
 
     /**

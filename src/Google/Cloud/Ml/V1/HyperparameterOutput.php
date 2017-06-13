@@ -104,7 +104,8 @@ class HyperparameterOutput extends \Google\Protobuf\Internal\Message
      */
     public function setHyperparameters(&$var)
     {
-        $this->hyperparameters = $var;
+        $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::STRING, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->hyperparameters = $arr;
     }
 
     /**
@@ -153,8 +154,8 @@ class HyperparameterOutput extends \Google\Protobuf\Internal\Message
      */
     public function setAllMetrics(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Ml\V1\HyperparameterOutput_HyperparameterMetric::class);
-        $this->all_metrics = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Ml\V1\HyperparameterOutput_HyperparameterMetric::class);
+        $this->all_metrics = $arr;
     }
 
 }

@@ -88,8 +88,8 @@ class Distribution_ExplicitBuckets extends \Google\Protobuf\Internal\Message
      */
     public function setBounds(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::DOUBLE);
-        $this->bounds = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::DOUBLE);
+        $this->bounds = $arr;
     }
 
 }

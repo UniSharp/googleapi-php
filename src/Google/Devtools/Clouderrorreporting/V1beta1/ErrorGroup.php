@@ -124,8 +124,8 @@ class ErrorGroup extends \Google\Protobuf\Internal\Message
      */
     public function setTrackingIssues(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Devtools\Clouderrorreporting\V1beta1\TrackingIssue::class);
-        $this->tracking_issues = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Devtools\Clouderrorreporting\V1beta1\TrackingIssue::class);
+        $this->tracking_issues = $arr;
     }
 
 }

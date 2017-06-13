@@ -255,7 +255,7 @@ class TransactionOptions extends \Google\Protobuf\Internal\Message
 
     public function getMode()
     {
-        return $this->mode;
+        return $this->whichOneof("mode");
     }
 
 }

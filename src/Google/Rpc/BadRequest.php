@@ -53,8 +53,8 @@ class BadRequest extends \Google\Protobuf\Internal\Message
      */
     public function setFieldViolations(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Rpc\BadRequest_FieldViolation::class);
-        $this->field_violations = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Rpc\BadRequest_FieldViolation::class);
+        $this->field_violations = $arr;
     }
 
 }

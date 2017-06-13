@@ -76,7 +76,7 @@ class RepoId extends \Google\Protobuf\Internal\Message
 
     public function getId()
     {
-        return $this->id;
+        return $this->whichOneof("id");
     }
 
 }

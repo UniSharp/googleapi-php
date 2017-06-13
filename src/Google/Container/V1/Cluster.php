@@ -708,8 +708,8 @@ class Cluster extends \Google\Protobuf\Internal\Message
      */
     public function setNodePools(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Container\V1\NodePool::class);
-        $this->node_pools = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Container\V1\NodePool::class);
+        $this->node_pools = $arr;
     }
 
     /**
@@ -737,8 +737,8 @@ class Cluster extends \Google\Protobuf\Internal\Message
      */
     public function setLocations(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
-        $this->locations = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->locations = $arr;
     }
 
     /**
@@ -799,7 +799,8 @@ class Cluster extends \Google\Protobuf\Internal\Message
      */
     public function setResourceLabels(&$var)
     {
-        $this->resource_labels = $var;
+        $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::STRING, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->resource_labels = $arr;
     }
 
     /**
@@ -1190,8 +1191,8 @@ class Cluster extends \Google\Protobuf\Internal\Message
      */
     public function setInstanceGroupUrls(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
-        $this->instance_group_urls = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->instance_group_urls = $arr;
     }
 
     /**

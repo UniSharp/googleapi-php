@@ -196,8 +196,8 @@ class Pipeline extends \Google\Protobuf\Internal\Message
      */
     public function setInputParameters(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Genomics\V1alpha2\PipelineParameter::class);
-        $this->input_parameters = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Genomics\V1alpha2\PipelineParameter::class);
+        $this->input_parameters = $arr;
     }
 
     /**
@@ -221,8 +221,8 @@ class Pipeline extends \Google\Protobuf\Internal\Message
      */
     public function setOutputParameters(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Genomics\V1alpha2\PipelineParameter::class);
-        $this->output_parameters = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Genomics\V1alpha2\PipelineParameter::class);
+        $this->output_parameters = $arr;
     }
 
     /**
@@ -320,7 +320,7 @@ class Pipeline extends \Google\Protobuf\Internal\Message
 
     public function getExecutor()
     {
-        return $this->executor;
+        return $this->whichOneof("executor");
     }
 
 }

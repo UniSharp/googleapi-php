@@ -132,8 +132,8 @@ class Policy extends \Google\Protobuf\Internal\Message
      */
     public function setBindings(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Iam\V1\Binding::class);
-        $this->bindings = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Iam\V1\Binding::class);
+        $this->bindings = $arr;
     }
 
     /**

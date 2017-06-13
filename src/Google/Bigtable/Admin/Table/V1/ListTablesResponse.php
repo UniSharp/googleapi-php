@@ -51,8 +51,8 @@ class ListTablesResponse extends \Google\Protobuf\Internal\Message
      */
     public function setTables(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Bigtable\Admin\Table\V1\Table::class);
-        $this->tables = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Bigtable\Admin\Table\V1\Table::class);
+        $this->tables = $arr;
     }
 
 }

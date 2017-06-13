@@ -163,12 +163,12 @@ class ColumnRange extends \Google\Protobuf\Internal\Message
 
     public function getStartQualifier()
     {
-        return $this->start_qualifier;
+        return $this->whichOneof("start_qualifier");
     }
 
     public function getEndQualifier()
     {
-        return $this->end_qualifier;
+        return $this->whichOneof("end_qualifier");
     }
 
 }

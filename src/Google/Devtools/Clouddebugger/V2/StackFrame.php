@@ -130,8 +130,8 @@ class StackFrame extends \Google\Protobuf\Internal\Message
      */
     public function setArguments(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Devtools\Clouddebugger\V2\Variable::class);
-        $this->arguments = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Devtools\Clouddebugger\V2\Variable::class);
+        $this->arguments = $arr;
     }
 
     /**
@@ -157,8 +157,8 @@ class StackFrame extends \Google\Protobuf\Internal\Message
      */
     public function setLocals(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Devtools\Clouddebugger\V2\Variable::class);
-        $this->locals = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Devtools\Clouddebugger\V2\Variable::class);
+        $this->locals = $arr;
     }
 
 }

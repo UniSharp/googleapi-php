@@ -181,8 +181,8 @@ class Model extends \Google\Protobuf\Internal\Message
      */
     public function setRegions(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
-        $this->regions = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->regions = $arr;
     }
 
     /**

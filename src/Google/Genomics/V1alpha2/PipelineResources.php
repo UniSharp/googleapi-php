@@ -192,8 +192,8 @@ class PipelineResources extends \Google\Protobuf\Internal\Message
      */
     public function setDisks(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Genomics\V1alpha2\PipelineResources_Disk::class);
-        $this->disks = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Genomics\V1alpha2\PipelineResources_Disk::class);
+        $this->disks = $arr;
     }
 
     /**
@@ -219,8 +219,8 @@ class PipelineResources extends \Google\Protobuf\Internal\Message
      */
     public function setZones(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
-        $this->zones = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->zones = $arr;
     }
 
     /**

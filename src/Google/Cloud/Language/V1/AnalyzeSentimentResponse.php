@@ -124,8 +124,8 @@ class AnalyzeSentimentResponse extends \Google\Protobuf\Internal\Message
      */
     public function setSentences(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Language\V1\Sentence::class);
-        $this->sentences = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Language\V1\Sentence::class);
+        $this->sentences = $arr;
     }
 
 }

@@ -204,7 +204,8 @@ class WriteLogEntriesRequest extends \Google\Protobuf\Internal\Message
      */
     public function setLabels(&$var)
     {
-        $this->labels = $var;
+        $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::STRING, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->labels = $arr;
     }
 
     /**
@@ -252,8 +253,8 @@ class WriteLogEntriesRequest extends \Google\Protobuf\Internal\Message
      */
     public function setEntries(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Logging\V2\LogEntry::class);
-        $this->entries = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Logging\V2\LogEntry::class);
+        $this->entries = $arr;
     }
 
     /**

@@ -221,8 +221,8 @@ class ConfigChange extends \Google\Protobuf\Internal\Message
      */
     public function setAdvices(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Api\Advice::class);
-        $this->advices = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Api\Advice::class);
+        $this->advices = $arr;
     }
 
 }

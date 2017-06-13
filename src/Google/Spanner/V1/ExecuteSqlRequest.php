@@ -258,7 +258,8 @@ class ExecuteSqlRequest extends \Google\Protobuf\Internal\Message
      */
     public function setParamTypes(&$var)
     {
-        $this->param_types = $var;
+        $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::STRING, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Spanner\V1\Type::class);
+        $this->param_types = $arr;
     }
 
     /**

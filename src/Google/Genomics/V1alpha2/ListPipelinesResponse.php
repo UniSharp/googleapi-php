@@ -64,8 +64,8 @@ class ListPipelinesResponse extends \Google\Protobuf\Internal\Message
      */
     public function setPipelines(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Genomics\V1alpha2\Pipeline::class);
-        $this->pipelines = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Genomics\V1alpha2\Pipeline::class);
+        $this->pipelines = $arr;
     }
 
     /**

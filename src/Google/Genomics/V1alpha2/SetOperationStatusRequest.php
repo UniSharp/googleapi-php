@@ -74,8 +74,8 @@ class SetOperationStatusRequest extends \Google\Protobuf\Internal\Message
      */
     public function setTimestampEvents(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Genomics\V1alpha2\TimestampEvent::class);
-        $this->timestamp_events = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Genomics\V1alpha2\TimestampEvent::class);
+        $this->timestamp_events = $arr;
     }
 
     /**

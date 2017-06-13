@@ -55,8 +55,8 @@ class InspectContentResponse extends \Google\Protobuf\Internal\Message
      */
     public function setResults(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Privacy\Dlp\V2beta1\InspectResult::class);
-        $this->results = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Privacy\Dlp\V2beta1\InspectResult::class);
+        $this->results = $arr;
     }
 
 }

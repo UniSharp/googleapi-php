@@ -62,8 +62,8 @@ class ListInstanceConfigsResponse extends \Google\Protobuf\Internal\Message
      */
     public function setInstanceConfigs(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Spanner\Admin\Instance\V1\InstanceConfig::class);
-        $this->instance_configs = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Spanner\Admin\Instance\V1\InstanceConfig::class);
+        $this->instance_configs = $arr;
     }
 
     /**

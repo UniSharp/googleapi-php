@@ -68,8 +68,8 @@ class ListConfigsResponse extends \Google\Protobuf\Internal\Message
      */
     public function setConfigs(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Runtimeconfig\V1beta1\RuntimeConfig::class);
-        $this->configs = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Runtimeconfig\V1beta1\RuntimeConfig::class);
+        $this->configs = $arr;
     }
 
     /**

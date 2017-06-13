@@ -62,8 +62,8 @@ class ListReposResponse extends \Google\Protobuf\Internal\Message
      */
     public function setRepos(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Devtools\Sourcerepo\V1\Repo::class);
-        $this->repos = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Devtools\Sourcerepo\V1\Repo::class);
+        $this->repos = $arr;
     }
 
     /**

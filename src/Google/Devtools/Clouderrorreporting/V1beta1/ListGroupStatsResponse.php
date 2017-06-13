@@ -73,8 +73,8 @@ class ListGroupStatsResponse extends \Google\Protobuf\Internal\Message
      */
     public function setErrorGroupStats(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Devtools\Clouderrorreporting\V1beta1\ErrorGroupStats::class);
-        $this->error_group_stats = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Devtools\Clouderrorreporting\V1beta1\ErrorGroupStats::class);
+        $this->error_group_stats = $arr;
     }
 
     /**

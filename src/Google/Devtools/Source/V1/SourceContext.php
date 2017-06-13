@@ -127,7 +127,7 @@ class SourceContext extends \Google\Protobuf\Internal\Message
 
     public function getContext()
     {
-        return $this->context;
+        return $this->whichOneof("context");
     }
 
 }

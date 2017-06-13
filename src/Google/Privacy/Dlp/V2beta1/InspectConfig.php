@@ -93,8 +93,8 @@ class InspectConfig extends \Google\Protobuf\Internal\Message
      */
     public function setInfoTypes(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Privacy\Dlp\V2beta1\InfoType::class);
-        $this->info_types = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Privacy\Dlp\V2beta1\InfoType::class);
+        $this->info_types = $arr;
     }
 
     /**

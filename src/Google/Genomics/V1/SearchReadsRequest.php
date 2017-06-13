@@ -118,8 +118,8 @@ class SearchReadsRequest extends \Google\Protobuf\Internal\Message
      */
     public function setReadGroupSetIds(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
-        $this->read_group_set_ids = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->read_group_set_ids = $arr;
     }
 
     /**
@@ -147,8 +147,8 @@ class SearchReadsRequest extends \Google\Protobuf\Internal\Message
      */
     public function setReadGroupIds(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
-        $this->read_group_ids = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->read_group_ids = $arr;
     }
 
     /**

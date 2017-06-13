@@ -54,8 +54,8 @@ class AnnotateVideoProgress extends \Google\Protobuf\Internal\Message
      */
     public function setAnnotationProgress(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Videointelligence\V1beta1\VideoAnnotationProgress::class);
-        $this->annotation_progress = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Videointelligence\V1beta1\VideoAnnotationProgress::class);
+        $this->annotation_progress = $arr;
     }
 
 }

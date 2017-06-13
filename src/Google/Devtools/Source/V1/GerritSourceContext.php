@@ -173,7 +173,7 @@ class GerritSourceContext extends \Google\Protobuf\Internal\Message
 
     public function getRevision()
     {
-        return $this->revision;
+        return $this->whichOneof("revision");
     }
 
 }

@@ -93,8 +93,8 @@ class ReportResponse extends \Google\Protobuf\Internal\Message
      */
     public function setReportErrors(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Api\Servicecontrol\V1\ReportResponse_ReportError::class);
-        $this->report_errors = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Api\Servicecontrol\V1\ReportResponse_ReportError::class);
+        $this->report_errors = $arr;
     }
 
     /**

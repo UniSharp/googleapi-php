@@ -131,8 +131,8 @@ class LinearAlignment extends \Google\Protobuf\Internal\Message
      */
     public function setCigar(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Genomics\V1\CigarUnit::class);
-        $this->cigar = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Genomics\V1\CigarUnit::class);
+        $this->cigar = $arr;
     }
 
 }

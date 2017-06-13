@@ -90,8 +90,8 @@ class SearchReferenceSetsRequest extends \Google\Protobuf\Internal\Message
      */
     public function setMd5Checksums(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
-        $this->md5checksums = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->md5checksums = $arr;
     }
 
     /**
@@ -121,8 +121,8 @@ class SearchReferenceSetsRequest extends \Google\Protobuf\Internal\Message
      */
     public function setAccessions(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
-        $this->accessions = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->accessions = $arr;
     }
 
     /**

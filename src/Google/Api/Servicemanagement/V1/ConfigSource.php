@@ -95,8 +95,8 @@ class ConfigSource extends \Google\Protobuf\Internal\Message
      */
     public function setFiles(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Api\Servicemanagement\V1\ConfigFile::class);
-        $this->files = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Api\Servicemanagement\V1\ConfigFile::class);
+        $this->files = $arr;
     }
 
 }

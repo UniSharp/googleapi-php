@@ -61,7 +61,8 @@ class LoggingConfig extends \Google\Protobuf\Internal\Message
      */
     public function setDriverLogLevels(&$var)
     {
-        $this->driver_log_levels = $var;
+        $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::STRING, \Google\Protobuf\Internal\GPBType::ENUM, \Google\Cloud\Dataproc\V1\LoggingConfig_Level::class);
+        $this->driver_log_levels = $arr;
     }
 
 }

@@ -176,8 +176,8 @@ class ListGroupStatsRequest extends \Google\Protobuf\Internal\Message
      */
     public function setGroupId(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
-        $this->group_id = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->group_id = $arr;
     }
 
     /**

@@ -127,12 +127,12 @@ class RowRange extends \Google\Protobuf\Internal\Message
 
     public function getStartKey()
     {
-        return $this->start_key;
+        return $this->whichOneof("start_key");
     }
 
     public function getEndKey()
     {
-        return $this->end_key;
+        return $this->whichOneof("end_key");
     }
 
 }

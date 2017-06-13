@@ -62,8 +62,8 @@ class ListLogMetricsResponse extends \Google\Protobuf\Internal\Message
      */
     public function setMetrics(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Logging\V2\LogMetric::class);
-        $this->metrics = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Logging\V2\LogMetric::class);
+        $this->metrics = $arr;
     }
 
     /**

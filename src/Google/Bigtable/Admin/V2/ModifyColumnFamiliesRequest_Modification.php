@@ -140,7 +140,7 @@ class ModifyColumnFamiliesRequest_Modification extends \Google\Protobuf\Internal
 
     public function getMod()
     {
-        return $this->mod;
+        return $this->whichOneof("mod");
     }
 
 }

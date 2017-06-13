@@ -92,8 +92,8 @@ class Monitoring_MonitoringDestination extends \Google\Protobuf\Internal\Message
      */
     public function setMetrics(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
-        $this->metrics = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->metrics = $arr;
     }
 
 }

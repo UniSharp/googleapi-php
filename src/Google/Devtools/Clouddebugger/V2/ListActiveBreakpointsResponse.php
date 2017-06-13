@@ -73,8 +73,8 @@ class ListActiveBreakpointsResponse extends \Google\Protobuf\Internal\Message
      */
     public function setBreakpoints(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Devtools\Clouddebugger\V2\Breakpoint::class);
-        $this->breakpoints = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Devtools\Clouddebugger\V2\Breakpoint::class);
+        $this->breakpoints = $arr;
     }
 
     /**

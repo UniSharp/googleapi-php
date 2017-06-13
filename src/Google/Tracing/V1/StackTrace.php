@@ -60,8 +60,8 @@ class StackTrace extends \Google\Protobuf\Internal\Message
      */
     public function setStackFrame(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Tracing\V1\StackTrace_StackFrame::class);
-        $this->stack_frame = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Tracing\V1\StackTrace_StackFrame::class);
+        $this->stack_frame = $arr;
     }
 
     /**

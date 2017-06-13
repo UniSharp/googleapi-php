@@ -91,8 +91,8 @@ class ReadRowsResponse extends \Google\Protobuf\Internal\Message
      */
     public function setChunks(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Bigtable\V1\ReadRowsResponse_Chunk::class);
-        $this->chunks = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Bigtable\V1\ReadRowsResponse_Chunk::class);
+        $this->chunks = $arr;
     }
 
 }

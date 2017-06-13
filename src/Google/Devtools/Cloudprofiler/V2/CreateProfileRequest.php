@@ -102,8 +102,8 @@ class CreateProfileRequest extends \Google\Protobuf\Internal\Message
      */
     public function setProfileType(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, Google\Devtools\Cloudprofiler\V2\ProfileType::class);
-        $this->profile_type = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, \Google\Devtools\Cloudprofiler\V2\ProfileType::class);
+        $this->profile_type = $arr;
     }
 
     /**

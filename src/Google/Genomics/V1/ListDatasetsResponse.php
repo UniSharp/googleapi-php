@@ -62,8 +62,8 @@ class ListDatasetsResponse extends \Google\Protobuf\Internal\Message
      */
     public function setDatasets(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Genomics\V1\Dataset::class);
-        $this->datasets = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Genomics\V1\Dataset::class);
+        $this->datasets = $arr;
     }
 
     /**

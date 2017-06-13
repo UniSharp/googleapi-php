@@ -150,7 +150,8 @@ class GqlQuery extends \Google\Protobuf\Internal\Message
      */
     public function setNamedBindings(&$var)
     {
-        $this->named_bindings = $var;
+        $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::STRING, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Datastore\V1\GqlQueryParameter::class);
+        $this->named_bindings = $arr;
     }
 
     /**
@@ -180,8 +181,8 @@ class GqlQuery extends \Google\Protobuf\Internal\Message
      */
     public function setPositionalBindings(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Datastore\V1\GqlQueryParameter::class);
-        $this->positional_bindings = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Datastore\V1\GqlQueryParameter::class);
+        $this->positional_bindings = $arr;
     }
 
 }

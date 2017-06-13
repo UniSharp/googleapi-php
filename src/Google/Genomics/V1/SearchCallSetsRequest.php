@@ -83,8 +83,8 @@ class SearchCallSetsRequest extends \Google\Protobuf\Internal\Message
      */
     public function setVariantSetIds(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
-        $this->variant_set_ids = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->variant_set_ids = $arr;
     }
 
     /**

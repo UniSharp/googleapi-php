@@ -151,8 +151,8 @@ class ReferenceSet extends \Google\Protobuf\Internal\Message
      */
     public function setReferenceIds(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
-        $this->reference_ids = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->reference_ids = $arr;
     }
 
     /**
@@ -319,8 +319,8 @@ class ReferenceSet extends \Google\Protobuf\Internal\Message
      */
     public function setSourceAccessions(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
-        $this->source_accessions = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->source_accessions = $arr;
     }
 
 }

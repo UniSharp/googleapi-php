@@ -1045,8 +1045,8 @@ class RequestLog extends \Google\Protobuf\Internal\Message
      */
     public function setLine(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Appengine\Logging\V1\LogLine::class);
-        $this->line = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Appengine\Logging\V1\LogLine::class);
+        $this->line = $arr;
     }
 
     /**
@@ -1124,8 +1124,8 @@ class RequestLog extends \Google\Protobuf\Internal\Message
      */
     public function setSourceReference(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Appengine\Logging\V1\SourceReference::class);
-        $this->source_reference = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Appengine\Logging\V1\SourceReference::class);
+        $this->source_reference = $arr;
     }
 
 }

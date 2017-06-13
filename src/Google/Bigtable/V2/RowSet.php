@@ -60,8 +60,8 @@ class RowSet extends \Google\Protobuf\Internal\Message
      */
     public function setRowKeys(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::BYTES);
-        $this->row_keys = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::BYTES);
+        $this->row_keys = $arr;
     }
 
     /**
@@ -85,8 +85,8 @@ class RowSet extends \Google\Protobuf\Internal\Message
      */
     public function setRowRanges(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Bigtable\V2\RowRange::class);
-        $this->row_ranges = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Bigtable\V2\RowRange::class);
+        $this->row_ranges = $arr;
     }
 
 }

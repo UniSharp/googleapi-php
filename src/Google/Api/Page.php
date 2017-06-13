@@ -164,8 +164,8 @@ class Page extends \Google\Protobuf\Internal\Message
      */
     public function setSubpages(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Api\Page::class);
-        $this->subpages = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Api\Page::class);
+        $this->subpages = $arr;
     }
 
 }

@@ -60,8 +60,8 @@ class BuildOptions extends \Google\Protobuf\Internal\Message
      */
     public function setSourceProvenanceHash(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, Google\Devtools\Cloudbuild\V1\Hash_HashType::class);
-        $this->source_provenance_hash = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, \Google\Devtools\Cloudbuild\V1\Hash_HashType::class);
+        $this->source_provenance_hash = $arr;
     }
 
     /**

@@ -101,8 +101,8 @@ class Family extends \Google\Protobuf\Internal\Message
      */
     public function setColumns(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Bigtable\V2\Column::class);
-        $this->columns = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Bigtable\V2\Column::class);
+        $this->columns = $arr;
     }
 
 }

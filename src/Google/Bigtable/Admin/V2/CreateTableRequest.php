@@ -197,8 +197,8 @@ class CreateTableRequest extends \Google\Protobuf\Internal\Message
      */
     public function setInitialSplits(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Bigtable\Admin\V2\CreateTableRequest_Split::class);
-        $this->initial_splits = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Bigtable\Admin\V2\CreateTableRequest_Split::class);
+        $this->initial_splits = $arr;
     }
 
 }

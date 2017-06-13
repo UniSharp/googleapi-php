@@ -21,9 +21,8 @@ class Iam
         \GPBMetadata\Google\Protobuf\FieldMask::initOnce();
         \GPBMetadata\Google\Protobuf\Timestamp::initOnce();
         $pool->internalAddGeneratedFile(hex2bin(
-            "0ab0250a1d676f6f676c652f69616d2f61646d696e2f76312f69616d2e70" .
-            "726f746f1213676f6f676c652e69616d2e61646d696e2e76311a1c676f6f" .
-            "676c652f6170692f616e6e6f746174696f6e732e70726f746f1a1e676f6f" .
+            "0a92250a1d676f6f676c652f69616d2f61646d696e2f76312f69616d2e70" .
+            "726f746f1213676f6f676c652e69616d2e61646d696e2e76311a1e676f6f" .
             "676c652f69616d2f76312f69616d5f706f6c6963792e70726f746f1a1a67" .
             "6f6f676c652f69616d2f76312f706f6c6963792e70726f746f1a1b676f6f" .
             "676c652f70726f746f6275662f656d7074792e70726f746f1a20676f6f67" .

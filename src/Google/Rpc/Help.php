@@ -55,8 +55,8 @@ class Help extends \Google\Protobuf\Internal\Message
      */
     public function setLinks(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Rpc\Help_Link::class);
-        $this->links = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Rpc\Help_Link::class);
+        $this->links = $arr;
     }
 
 }

@@ -52,8 +52,8 @@ class QueryGrantableRolesResponse extends \Google\Protobuf\Internal\Message
      */
     public function setRoles(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Iam\Admin\V1\Role::class);
-        $this->roles = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Iam\Admin\V1\Role::class);
+        $this->roles = $arr;
     }
 
 }

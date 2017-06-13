@@ -114,8 +114,8 @@ class ImageContext extends \Google\Protobuf\Internal\Message
      */
     public function setLanguageHints(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
-        $this->language_hints = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->language_hints = $arr;
     }
 
     /**

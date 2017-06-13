@@ -62,8 +62,8 @@ class ListDatabasesResponse extends \Google\Protobuf\Internal\Message
      */
     public function setDatabases(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Spanner\Admin\Database\V1\Database::class);
-        $this->databases = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Spanner\Admin\Database\V1\Database::class);
+        $this->databases = $arr;
     }
 
     /**

@@ -79,7 +79,8 @@ class MetricValue extends \Google\Protobuf\Internal\Message
      */
     public function setLabels(&$var)
     {
-        $this->labels = $var;
+        $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::STRING, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->labels = $arr;
     }
 
     /**
@@ -267,7 +268,7 @@ class MetricValue extends \Google\Protobuf\Internal\Message
 
     public function getValue()
     {
-        return $this->value;
+        return $this->whichOneof("value");
     }
 
 }

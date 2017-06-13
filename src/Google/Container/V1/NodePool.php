@@ -271,8 +271,8 @@ class NodePool extends \Google\Protobuf\Internal\Message
      */
     public function setInstanceGroupUrls(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
-        $this->instance_group_urls = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->instance_group_urls = $arr;
     }
 
     /**

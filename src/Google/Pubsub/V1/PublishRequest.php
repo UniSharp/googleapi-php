@@ -88,8 +88,8 @@ class PublishRequest extends \Google\Protobuf\Internal\Message
      */
     public function setMessages(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Pubsub\V1\PubsubMessage::class);
-        $this->messages = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Pubsub\V1\PubsubMessage::class);
+        $this->messages = $arr;
     }
 
 }

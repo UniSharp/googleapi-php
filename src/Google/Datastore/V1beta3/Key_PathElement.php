@@ -130,7 +130,7 @@ class Key_PathElement extends \Google\Protobuf\Internal\Message
 
     public function getIdType()
     {
-        return $this->id_type;
+        return $this->whichOneof("id_type");
     }
 
 }

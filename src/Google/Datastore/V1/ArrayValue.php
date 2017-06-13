@@ -58,8 +58,8 @@ class ArrayValue extends \Google\Protobuf\Internal\Message
      */
     public function setValues(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Datastore\V1\Value::class);
-        $this->values = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Datastore\V1\Value::class);
+        $this->values = $arr;
     }
 
 }

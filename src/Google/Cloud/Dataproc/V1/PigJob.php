@@ -174,7 +174,8 @@ class PigJob extends \Google\Protobuf\Internal\Message
      */
     public function setScriptVariables(&$var)
     {
-        $this->script_variables = $var;
+        $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::STRING, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->script_variables = $arr;
     }
 
     /**
@@ -204,7 +205,8 @@ class PigJob extends \Google\Protobuf\Internal\Message
      */
     public function setProperties(&$var)
     {
-        $this->properties = $var;
+        $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::STRING, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->properties = $arr;
     }
 
     /**
@@ -230,8 +232,8 @@ class PigJob extends \Google\Protobuf\Internal\Message
      */
     public function setJarFileUris(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
-        $this->jar_file_uris = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->jar_file_uris = $arr;
     }
 
     /**
@@ -261,7 +263,7 @@ class PigJob extends \Google\Protobuf\Internal\Message
 
     public function getQueries()
     {
-        return $this->queries;
+        return $this->whichOneof("queries");
     }
 
 }

@@ -64,8 +64,8 @@ class ListShelvesResponse extends \Google\Protobuf\Internal\Message
      */
     public function setShelves(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Example\Library\V1\Shelf::class);
-        $this->shelves = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Example\Library\V1\Shelf::class);
+        $this->shelves = $arr;
     }
 
     /**

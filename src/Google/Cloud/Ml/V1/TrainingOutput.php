@@ -107,8 +107,8 @@ class TrainingOutput extends \Google\Protobuf\Internal\Message
      */
     public function setTrials(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Ml\V1\HyperparameterOutput::class);
-        $this->trials = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Ml\V1\HyperparameterOutput::class);
+        $this->trials = $arr;
     }
 
     /**

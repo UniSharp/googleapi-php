@@ -62,8 +62,8 @@ class ListGroupsResponse extends \Google\Protobuf\Internal\Message
      */
     public function setGroup(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Monitoring\V3\Group::class);
-        $this->group = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Monitoring\V3\Group::class);
+        $this->group = $arr;
     }
 
     /**

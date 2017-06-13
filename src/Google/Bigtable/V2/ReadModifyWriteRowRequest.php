@@ -133,8 +133,8 @@ class ReadModifyWriteRowRequest extends \Google\Protobuf\Internal\Message
      */
     public function setRules(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Bigtable\V2\ReadModifyWriteRule::class);
-        $this->rules = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Bigtable\V2\ReadModifyWriteRule::class);
+        $this->rules = $arr;
     }
 
 }

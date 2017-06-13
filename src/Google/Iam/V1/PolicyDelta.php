@@ -52,8 +52,8 @@ class PolicyDelta extends \Google\Protobuf\Internal\Message
      */
     public function setBindingDeltas(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Iam\V1\BindingDelta::class);
-        $this->binding_deltas = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Iam\V1\BindingDelta::class);
+        $this->binding_deltas = $arr;
     }
 
 }

@@ -70,8 +70,8 @@ class AnalyzeSyntaxResponse extends \Google\Protobuf\Internal\Message
      */
     public function setSentences(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Language\V1beta2\Sentence::class);
-        $this->sentences = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Language\V1beta2\Sentence::class);
+        $this->sentences = $arr;
     }
 
     /**
@@ -95,8 +95,8 @@ class AnalyzeSyntaxResponse extends \Google\Protobuf\Internal\Message
      */
     public function setTokens(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Language\V1beta2\Token::class);
-        $this->tokens = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Language\V1beta2\Token::class);
+        $this->tokens = $arr;
     }
 
     /**

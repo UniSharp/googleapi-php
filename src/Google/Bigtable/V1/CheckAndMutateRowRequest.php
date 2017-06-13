@@ -187,8 +187,8 @@ class CheckAndMutateRowRequest extends \Google\Protobuf\Internal\Message
      */
     public function setTrueMutations(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Bigtable\V1\Mutation::class);
-        $this->true_mutations = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Bigtable\V1\Mutation::class);
+        $this->true_mutations = $arr;
     }
 
     /**
@@ -220,8 +220,8 @@ class CheckAndMutateRowRequest extends \Google\Protobuf\Internal\Message
      */
     public function setFalseMutations(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Bigtable\V1\Mutation::class);
-        $this->false_mutations = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Bigtable\V1\Mutation::class);
+        $this->false_mutations = $arr;
     }
 
 }

@@ -160,8 +160,8 @@ class Paragraph extends \Google\Protobuf\Internal\Message
      */
     public function setWords(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Vision\V1\Word::class);
-        $this->words = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Vision\V1\Word::class);
+        $this->words = $arr;
     }
 
 }

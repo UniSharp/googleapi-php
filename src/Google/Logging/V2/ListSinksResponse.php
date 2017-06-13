@@ -62,8 +62,8 @@ class ListSinksResponse extends \Google\Protobuf\Internal\Message
      */
     public function setSinks(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Logging\V2\LogSink::class);
-        $this->sinks = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Logging\V2\LogSink::class);
+        $this->sinks = $arr;
     }
 
     /**

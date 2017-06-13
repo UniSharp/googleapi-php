@@ -62,8 +62,8 @@ class ListInstancesResponse extends \Google\Protobuf\Internal\Message
      */
     public function setInstances(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Spanner\Admin\Instance\V1\Instance::class);
-        $this->instances = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Spanner\Admin\Instance\V1\Instance::class);
+        $this->instances = $arr;
     }
 
     /**

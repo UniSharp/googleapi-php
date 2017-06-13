@@ -79,8 +79,8 @@ class OperationMetadata extends \Google\Protobuf\Internal\Message
      */
     public function setResourceNames(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
-        $this->resource_names = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->resource_names = $arr;
     }
 
     /**
@@ -104,8 +104,8 @@ class OperationMetadata extends \Google\Protobuf\Internal\Message
      */
     public function setSteps(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Api\Servicemanagement\V1\OperationMetadata_Step::class);
-        $this->steps = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Api\Servicemanagement\V1\OperationMetadata_Step::class);
+        $this->steps = $arr;
     }
 
     /**

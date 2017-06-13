@@ -115,7 +115,7 @@ class ContentItem extends \Google\Protobuf\Internal\Message
 
     public function getDataItem()
     {
-        return $this->data_item;
+        return $this->whichOneof("data_item");
     }
 
 }

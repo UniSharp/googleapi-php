@@ -17,9 +17,8 @@ class Experimental
         \GPBMetadata\Google\Api\Annotations::initOnce();
         \GPBMetadata\Google\Api\Experimental\AuthorizationConfig::initOnce();
         $pool->internalAddGeneratedFile(hex2bin(
-            "0ab7020a2a676f6f676c652f6170692f6578706572696d656e74616c2f65" .
+            "0a99020a2a676f6f676c652f6170692f6578706572696d656e74616c2f65" .
             "78706572696d656e74616c2e70726f746f120a676f6f676c652e6170691a" .
-            "1c676f6f676c652f6170692f616e6e6f746174696f6e732e70726f746f1a" .
             "32676f6f676c652f6170692f6578706572696d656e74616c2f617574686f" .
             "72697a6174696f6e5f636f6e6669672e70726f746f22460a0c4578706572" .
             "696d656e74616c12360a0d617574686f72697a6174696f6e18082001280b" .

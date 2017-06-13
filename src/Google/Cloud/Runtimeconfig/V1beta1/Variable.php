@@ -226,7 +226,7 @@ class Variable extends \Google\Protobuf\Internal\Message
 
     public function getContents()
     {
-        return $this->contents;
+        return $this->whichOneof("contents");
     }
 
 }

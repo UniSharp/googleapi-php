@@ -188,8 +188,8 @@ class VariantCall extends \Google\Protobuf\Internal\Message
      */
     public function setGenotype(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::INT32);
-        $this->genotype = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::INT32);
+        $this->genotype = $arr;
     }
 
     /**
@@ -256,8 +256,8 @@ class VariantCall extends \Google\Protobuf\Internal\Message
      */
     public function setGenotypeLikelihood(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::DOUBLE);
-        $this->genotype_likelihood = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::DOUBLE);
+        $this->genotype_likelihood = $arr;
     }
 
     /**
@@ -283,7 +283,8 @@ class VariantCall extends \Google\Protobuf\Internal\Message
      */
     public function setInfo(&$var)
     {
-        $this->info = $var;
+        $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::STRING, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Protobuf\ListValue::class);
+        $this->info = $arr;
     }
 
 }

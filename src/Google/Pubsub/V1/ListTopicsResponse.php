@@ -61,8 +61,8 @@ class ListTopicsResponse extends \Google\Protobuf\Internal\Message
      */
     public function setTopics(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Pubsub\V1\Topic::class);
-        $this->topics = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Pubsub\V1\Topic::class);
+        $this->topics = $arr;
     }
 
     /**

@@ -65,8 +65,8 @@ class ProjectProperties extends \Google\Protobuf\Internal\Message
      */
     public function setProperties(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Api\Property::class);
-        $this->properties = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Api\Property::class);
+        $this->properties = $arr;
     }
 
 }

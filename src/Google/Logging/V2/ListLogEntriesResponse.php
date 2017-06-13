@@ -68,8 +68,8 @@ class ListLogEntriesResponse extends \Google\Protobuf\Internal\Message
      */
     public function setEntries(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Logging\V2\LogEntry::class);
-        $this->entries = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Logging\V2\LogEntry::class);
+        $this->entries = $arr;
     }
 
     /**

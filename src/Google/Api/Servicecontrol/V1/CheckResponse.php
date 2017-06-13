@@ -105,8 +105,8 @@ class CheckResponse extends \Google\Protobuf\Internal\Message
      */
     public function setCheckErrors(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Api\Servicecontrol\V1\CheckError::class);
-        $this->check_errors = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Api\Servicecontrol\V1\CheckError::class);
+        $this->check_errors = $arr;
     }
 
     /**

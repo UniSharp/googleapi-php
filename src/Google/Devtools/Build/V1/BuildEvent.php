@@ -295,7 +295,7 @@ class BuildEvent extends \Google\Protobuf\Internal\Message
 
     public function getEvent()
     {
-        return $this->event;
+        return $this->whichOneof("event");
     }
 
 }

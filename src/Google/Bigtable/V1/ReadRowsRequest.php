@@ -261,7 +261,7 @@ class ReadRowsRequest extends \Google\Protobuf\Internal\Message
 
     public function getTarget()
     {
-        return $this->target;
+        return $this->whichOneof("target");
     }
 
 }

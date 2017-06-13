@@ -53,8 +53,8 @@ class FileHashes extends \Google\Protobuf\Internal\Message
      */
     public function setFileHash(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Devtools\Cloudbuild\V1\Hash::class);
-        $this->file_hash = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Devtools\Cloudbuild\V1\Hash::class);
+        $this->file_hash = $arr;
     }
 
 }

@@ -110,8 +110,8 @@ class Mutation_Write extends \Google\Protobuf\Internal\Message
      */
     public function setColumns(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
-        $this->columns = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->columns = $arr;
     }
 
     /**
@@ -149,8 +149,8 @@ class Mutation_Write extends \Google\Protobuf\Internal\Message
      */
     public function setValues(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Protobuf\ListValue::class);
-        $this->values = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Protobuf\ListValue::class);
+        $this->values = $arr;
     }
 
 }

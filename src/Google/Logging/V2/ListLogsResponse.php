@@ -68,8 +68,8 @@ class ListLogsResponse extends \Google\Protobuf\Internal\Message
      */
     public function setLogNames(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
-        $this->log_names = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->log_names = $arr;
     }
 
     /**

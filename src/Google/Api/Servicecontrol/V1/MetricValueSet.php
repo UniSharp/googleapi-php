@@ -87,8 +87,8 @@ class MetricValueSet extends \Google\Protobuf\Internal\Message
      */
     public function setMetricValues(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Api\Servicecontrol\V1\MetricValue::class);
-        $this->metric_values = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Api\Servicecontrol\V1\MetricValue::class);
+        $this->metric_values = $arr;
     }
 
 }

@@ -98,7 +98,7 @@ class ConverseRequest extends \Google\Protobuf\Internal\Message
 
     public function getConverseRequest()
     {
-        return $this->converse_request;
+        return $this->whichOneof("converse_request");
     }
 
 }

@@ -211,7 +211,7 @@ class Operation extends \Google\Protobuf\Internal\Message
 
     public function getResult()
     {
-        return $this->result;
+        return $this->whichOneof("result");
     }
 
 }

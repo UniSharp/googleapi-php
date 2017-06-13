@@ -94,8 +94,8 @@ class RedactContentRequest extends \Google\Protobuf\Internal\Message
      */
     public function setItems(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Privacy\Dlp\V2beta1\ContentItem::class);
-        $this->items = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Privacy\Dlp\V2beta1\ContentItem::class);
+        $this->items = $arr;
     }
 
     /**
@@ -119,8 +119,8 @@ class RedactContentRequest extends \Google\Protobuf\Internal\Message
      */
     public function setReplaceConfigs(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Privacy\Dlp\V2beta1\RedactContentRequest_ReplaceConfig::class);
-        $this->replace_configs = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Privacy\Dlp\V2beta1\RedactContentRequest_ReplaceConfig::class);
+        $this->replace_configs = $arr;
     }
 
 }

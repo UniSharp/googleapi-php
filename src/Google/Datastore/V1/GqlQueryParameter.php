@@ -78,7 +78,7 @@ class GqlQueryParameter extends \Google\Protobuf\Internal\Message
 
     public function getParameterType()
     {
-        return $this->parameter_type;
+        return $this->whichOneof("parameter_type");
     }
 
 }

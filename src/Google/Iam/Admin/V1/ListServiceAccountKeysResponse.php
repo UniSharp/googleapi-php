@@ -52,8 +52,8 @@ class ListServiceAccountKeysResponse extends \Google\Protobuf\Internal\Message
      */
     public function setKeys(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Iam\Admin\V1\ServiceAccountKey::class);
-        $this->keys = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Iam\Admin\V1\ServiceAccountKey::class);
+        $this->keys = $arr;
     }
 
 }

@@ -58,8 +58,8 @@ class PublishResponse extends \Google\Protobuf\Internal\Message
      */
     public function setMessageIds(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
-        $this->message_ids = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->message_ids = $arr;
     }
 
 }

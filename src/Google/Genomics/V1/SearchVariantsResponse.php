@@ -62,8 +62,8 @@ class SearchVariantsResponse extends \Google\Protobuf\Internal\Message
      */
     public function setVariants(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Genomics\V1\Variant::class);
-        $this->variants = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Genomics\V1\Variant::class);
+        $this->variants = $arr;
     }
 
     /**

@@ -103,8 +103,8 @@ class ListServiceAccountKeysRequest extends \Google\Protobuf\Internal\Message
      */
     public function setKeyTypes(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, Google\Iam\Admin\V1\ListServiceAccountKeysRequest_KeyType::class);
-        $this->key_types = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, \Google\Iam\Admin\V1\ListServiceAccountKeysRequest_KeyType::class);
+        $this->key_types = $arr;
     }
 
 }

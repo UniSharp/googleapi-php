@@ -162,12 +162,12 @@ class Mutation extends \Google\Protobuf\Internal\Message
 
     public function getOperation()
     {
-        return $this->operation;
+        return $this->whichOneof("operation");
     }
 
     public function getConflictDetectionStrategy()
     {
-        return $this->conflict_detection_strategy;
+        return $this->whichOneof("conflict_detection_strategy");
     }
 
 }

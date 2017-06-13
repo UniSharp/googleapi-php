@@ -100,8 +100,8 @@ class TestIamPermissionsRequest extends \Google\Protobuf\Internal\Message
      */
     public function setPermissions(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
-        $this->permissions = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->permissions = $arr;
     }
 
 }

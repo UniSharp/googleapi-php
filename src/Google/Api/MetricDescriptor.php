@@ -260,8 +260,8 @@ class MetricDescriptor extends \Google\Protobuf\Internal\Message
      */
     public function setLabels(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Api\LabelDescriptor::class);
-        $this->labels = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Api\LabelDescriptor::class);
+        $this->labels = $arr;
     }
 
     /**

@@ -62,8 +62,8 @@ class ListMonitoredResourceDescriptorsResponse extends \Google\Protobuf\Internal
      */
     public function setResourceDescriptors(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Api\MonitoredResourceDescriptor::class);
-        $this->resource_descriptors = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Api\MonitoredResourceDescriptor::class);
+        $this->resource_descriptors = $arr;
     }
 
     /**

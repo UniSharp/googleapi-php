@@ -65,8 +65,8 @@ class ListWaitersResponse extends \Google\Protobuf\Internal\Message
      */
     public function setWaiters(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Runtimeconfig\V1beta1\Waiter::class);
-        $this->waiters = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Runtimeconfig\V1beta1\Waiter::class);
+        $this->waiters = $arr;
     }
 
     /**

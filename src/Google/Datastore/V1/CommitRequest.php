@@ -175,13 +175,13 @@ class CommitRequest extends \Google\Protobuf\Internal\Message
      */
     public function setMutations(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Datastore\V1\Mutation::class);
-        $this->mutations = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Datastore\V1\Mutation::class);
+        $this->mutations = $arr;
     }
 
     public function getTransactionSelector()
     {
-        return $this->transaction_selector;
+        return $this->whichOneof("transaction_selector");
     }
 
 }

@@ -58,8 +58,8 @@ class SearchReferenceSetsResponse extends \Google\Protobuf\Internal\Message
      */
     public function setReferenceSets(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Genomics\V1\ReferenceSet::class);
-        $this->reference_sets = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Genomics\V1\ReferenceSet::class);
+        $this->reference_sets = $arr;
     }
 
     /**

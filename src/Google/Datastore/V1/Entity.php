@@ -115,7 +115,8 @@ class Entity extends \Google\Protobuf\Internal\Message
      */
     public function setProperties(&$var)
     {
-        $this->properties = $var;
+        $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::STRING, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Datastore\V1\Value::class);
+        $this->properties = $arr;
     }
 
 }

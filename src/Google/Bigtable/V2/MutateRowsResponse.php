@@ -52,8 +52,8 @@ class MutateRowsResponse extends \Google\Protobuf\Internal\Message
      */
     public function setEntries(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Bigtable\V2\MutateRowsResponse_Entry::class);
-        $this->entries = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Bigtable\V2\MutateRowsResponse_Entry::class);
+        $this->entries = $arr;
     }
 
 }

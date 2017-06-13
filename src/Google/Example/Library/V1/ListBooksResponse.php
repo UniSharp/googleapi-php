@@ -64,8 +64,8 @@ class ListBooksResponse extends \Google\Protobuf\Internal\Message
      */
     public function setBooks(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Example\Library\V1\Book::class);
-        $this->books = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Example\Library\V1\Book::class);
+        $this->books = $arr;
     }
 
     /**

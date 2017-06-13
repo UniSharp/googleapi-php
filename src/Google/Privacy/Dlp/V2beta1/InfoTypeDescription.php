@@ -118,8 +118,8 @@ class InfoTypeDescription extends \Google\Protobuf\Internal\Message
      */
     public function setCategories(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Privacy\Dlp\V2beta1\CategoryDescription::class);
-        $this->categories = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Privacy\Dlp\V2beta1\CategoryDescription::class);
+        $this->categories = $arr;
     }
 
 }

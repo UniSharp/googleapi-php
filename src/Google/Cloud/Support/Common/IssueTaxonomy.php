@@ -55,7 +55,8 @@ class IssueTaxonomy extends \Google\Protobuf\Internal\Message
      */
     public function setCategories(&$var)
     {
-        $this->categories = $var;
+        $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::STRING, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Support\Common\IssueTaxonomy_Category::class);
+        $this->categories = $arr;
     }
 
 }

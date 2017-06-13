@@ -54,8 +54,8 @@ class AnnotateVideoResponse extends \Google\Protobuf\Internal\Message
      */
     public function setAnnotationResults(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Videointelligence\V1beta1\VideoAnnotationResults::class);
-        $this->annotation_results = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Videointelligence\V1beta1\VideoAnnotationResults::class);
+        $this->annotation_results = $arr;
     }
 
 }

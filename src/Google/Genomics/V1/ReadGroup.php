@@ -318,8 +318,8 @@ class ReadGroup extends \Google\Protobuf\Internal\Message
      */
     public function setPrograms(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Genomics\V1\ReadGroup_Program::class);
-        $this->programs = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Genomics\V1\ReadGroup_Program::class);
+        $this->programs = $arr;
     }
 
     /**
@@ -370,7 +370,8 @@ class ReadGroup extends \Google\Protobuf\Internal\Message
      */
     public function setInfo(&$var)
     {
-        $this->info = $var;
+        $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::STRING, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Protobuf\ListValue::class);
+        $this->info = $arr;
     }
 
 }

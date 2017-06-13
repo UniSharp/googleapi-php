@@ -222,8 +222,8 @@ class ParameterSpec extends \Google\Protobuf\Internal\Message
      */
     public function setCategoricalValues(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
-        $this->categorical_values = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->categorical_values = $arr;
     }
 
     /**
@@ -255,8 +255,8 @@ class ParameterSpec extends \Google\Protobuf\Internal\Message
      */
     public function setDiscreteValues(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::DOUBLE);
-        $this->discrete_values = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::DOUBLE);
+        $this->discrete_values = $arr;
     }
 
     /**

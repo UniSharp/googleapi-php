@@ -126,7 +126,7 @@ class Mutation extends \Google\Protobuf\Internal\Message
 
     public function getMutation()
     {
-        return $this->mutation;
+        return $this->whichOneof("mutation");
     }
 
 }

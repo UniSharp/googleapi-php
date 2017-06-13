@@ -358,8 +358,8 @@ class Build extends \Google\Protobuf\Internal\Message
      */
     public function setSteps(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Devtools\Cloudbuild\V1\BuildStep::class);
-        $this->steps = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Devtools\Cloudbuild\V1\BuildStep::class);
+        $this->steps = $arr;
     }
 
     /**
@@ -536,8 +536,8 @@ class Build extends \Google\Protobuf\Internal\Message
      */
     public function setImages(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
-        $this->images = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->images = $arr;
     }
 
     /**
@@ -700,7 +700,8 @@ class Build extends \Google\Protobuf\Internal\Message
      */
     public function setSubstitutions(&$var)
     {
-        $this->substitutions = $var;
+        $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::STRING, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->substitutions = $arr;
     }
 
 }

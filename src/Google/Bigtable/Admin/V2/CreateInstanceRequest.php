@@ -175,7 +175,8 @@ class CreateInstanceRequest extends \Google\Protobuf\Internal\Message
      */
     public function setClusters(&$var)
     {
-        $this->clusters = $var;
+        $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::STRING, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Bigtable\Admin\V2\Cluster::class);
+        $this->clusters = $arr;
     }
 
 }

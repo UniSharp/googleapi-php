@@ -109,8 +109,8 @@ class ListCoverageBucketsResponse extends \Google\Protobuf\Internal\Message
      */
     public function setCoverageBuckets(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Genomics\V1\CoverageBucket::class);
-        $this->coverage_buckets = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Genomics\V1\CoverageBucket::class);
+        $this->coverage_buckets = $arr;
     }
 
     /**

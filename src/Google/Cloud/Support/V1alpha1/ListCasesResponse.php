@@ -62,8 +62,8 @@ class ListCasesResponse extends \Google\Protobuf\Internal\Message
      */
     public function setCases(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Support\Common\Case::class);
-        $this->cases = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Support\Common\Case::class);
+        $this->cases = $arr;
     }
 
     /**

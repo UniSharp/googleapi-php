@@ -61,8 +61,8 @@ class ListVersionsResponse extends \Google\Protobuf\Internal\Message
      */
     public function setVersions(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Ml\V1\Version::class);
-        $this->versions = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Ml\V1\Version::class);
+        $this->versions = $arr;
     }
 
     /**

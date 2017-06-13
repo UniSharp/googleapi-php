@@ -169,8 +169,8 @@ class ExportReadGroupSetRequest extends \Google\Protobuf\Internal\Message
      */
     public function setReferenceNames(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
-        $this->reference_names = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->reference_names = $arr;
     }
 
 }

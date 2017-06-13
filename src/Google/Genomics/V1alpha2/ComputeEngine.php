@@ -152,8 +152,8 @@ class ComputeEngine extends \Google\Protobuf\Internal\Message
      */
     public function setDiskNames(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
-        $this->disk_names = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->disk_names = $arr;
     }
 
 }

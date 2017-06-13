@@ -329,8 +329,8 @@ class Case extends \Google\Protobuf\Internal\Message
      */
     public function setCcAddresses(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
-        $this->cc_addresses = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->cc_addresses = $arr;
     }
 
     /**
@@ -379,8 +379,8 @@ class Case extends \Google\Protobuf\Internal\Message
      */
     public function setIssues(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Support\Common\CustomerIssue::class);
-        $this->issues = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Support\Common\CustomerIssue::class);
+        $this->issues = $arr;
     }
 
     /**

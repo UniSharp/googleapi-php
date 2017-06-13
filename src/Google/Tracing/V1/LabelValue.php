@@ -101,7 +101,7 @@ class LabelValue extends \Google\Protobuf\Internal\Message
 
     public function getValue()
     {
-        return $this->value;
+        return $this->whichOneof("value");
     }
 
 }

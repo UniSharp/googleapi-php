@@ -53,8 +53,8 @@ class StreamingPullResponse extends \Google\Protobuf\Internal\Message
      */
     public function setReceivedMessages(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Pubsub\V1\ReceivedMessage::class);
-        $this->received_messages = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Pubsub\V1\ReceivedMessage::class);
+        $this->received_messages = $arr;
     }
 
 }

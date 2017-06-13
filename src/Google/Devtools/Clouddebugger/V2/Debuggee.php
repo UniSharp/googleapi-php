@@ -386,8 +386,8 @@ class Debuggee extends \Google\Protobuf\Internal\Message
      */
     public function setSourceContexts(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Devtools\Source\V1\SourceContext::class);
-        $this->source_contexts = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Devtools\Source\V1\SourceContext::class);
+        $this->source_contexts = $arr;
     }
 
     /**
@@ -419,8 +419,8 @@ class Debuggee extends \Google\Protobuf\Internal\Message
      */
     public function setExtSourceContexts(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Devtools\Source\V1\ExtendedSourceContext::class);
-        $this->ext_source_contexts = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Devtools\Source\V1\ExtendedSourceContext::class);
+        $this->ext_source_contexts = $arr;
     }
 
     /**
@@ -446,7 +446,8 @@ class Debuggee extends \Google\Protobuf\Internal\Message
      */
     public function setLabels(&$var)
     {
-        $this->labels = $var;
+        $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::STRING, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->labels = $arr;
     }
 
 }

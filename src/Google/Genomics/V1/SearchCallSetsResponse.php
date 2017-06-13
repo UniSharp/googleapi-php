@@ -62,8 +62,8 @@ class SearchCallSetsResponse extends \Google\Protobuf\Internal\Message
      */
     public function setCallSets(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Genomics\V1\CallSet::class);
-        $this->call_sets = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Genomics\V1\CallSet::class);
+        $this->call_sets = $arr;
     }
 
     /**

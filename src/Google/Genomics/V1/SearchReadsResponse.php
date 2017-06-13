@@ -71,8 +71,8 @@ class SearchReadsResponse extends \Google\Protobuf\Internal\Message
      */
     public function setAlignments(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Genomics\V1\Read::class);
-        $this->alignments = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Genomics\V1\Read::class);
+        $this->alignments = $arr;
     }
 
     /**

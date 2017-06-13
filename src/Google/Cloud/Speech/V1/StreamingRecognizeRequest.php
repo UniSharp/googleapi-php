@@ -98,7 +98,7 @@ class StreamingRecognizeRequest extends \Google\Protobuf\Internal\Message
 
     public function getStreamingRequest()
     {
-        return $this->streaming_request;
+        return $this->whichOneof("streaming_request");
     }
 
 }

@@ -52,8 +52,8 @@ class ListBuildTriggersResponse extends \Google\Protobuf\Internal\Message
      */
     public function setTriggers(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Devtools\Cloudbuild\V1\BuildTrigger::class);
-        $this->triggers = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Devtools\Cloudbuild\V1\BuildTrigger::class);
+        $this->triggers = $arr;
     }
 
 }

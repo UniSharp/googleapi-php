@@ -61,8 +61,8 @@ class ListSnapshotsResponse extends \Google\Protobuf\Internal\Message
      */
     public function setSnapshots(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Pubsub\V1\Snapshot::class);
-        $this->snapshots = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Pubsub\V1\Snapshot::class);
+        $this->snapshots = $arr;
     }
 
     /**

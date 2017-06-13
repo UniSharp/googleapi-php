@@ -104,8 +104,8 @@ class SystemParameterRule extends \Google\Protobuf\Internal\Message
      */
     public function setParameters(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Api\SystemParameter::class);
-        $this->parameters = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Api\SystemParameter::class);
+        $this->parameters = $arr;
     }
 
 }

@@ -52,8 +52,8 @@ class DominantColorsAnnotation extends \Google\Protobuf\Internal\Message
      */
     public function setColors(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Vision\V1\ColorInfo::class);
-        $this->colors = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Vision\V1\ColorInfo::class);
+        $this->colors = $arr;
     }
 
 }

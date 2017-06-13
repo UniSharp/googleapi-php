@@ -133,7 +133,7 @@ class ConverseResponse extends \Google\Protobuf\Internal\Message
 
     public function getConverseResponse()
     {
-        return $this->converse_response;
+        return $this->whichOneof("converse_response");
     }
 
 }

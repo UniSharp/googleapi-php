@@ -217,8 +217,8 @@ class Variant extends \Google\Protobuf\Internal\Message
      */
     public function setNames(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
-        $this->names = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->names = $arr;
     }
 
     /**
@@ -379,8 +379,8 @@ class Variant extends \Google\Protobuf\Internal\Message
      */
     public function setAlternateBases(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
-        $this->alternate_bases = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->alternate_bases = $arr;
     }
 
     /**
@@ -433,8 +433,8 @@ class Variant extends \Google\Protobuf\Internal\Message
      */
     public function setFilter(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
-        $this->filter = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->filter = $arr;
     }
 
     /**
@@ -460,7 +460,8 @@ class Variant extends \Google\Protobuf\Internal\Message
      */
     public function setInfo(&$var)
     {
-        $this->info = $var;
+        $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::STRING, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Protobuf\ListValue::class);
+        $this->info = $arr;
     }
 
     /**
@@ -486,8 +487,8 @@ class Variant extends \Google\Protobuf\Internal\Message
      */
     public function setCalls(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Genomics\V1\VariantCall::class);
-        $this->calls = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Genomics\V1\VariantCall::class);
+        $this->calls = $arr;
     }
 
 }

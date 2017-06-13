@@ -196,8 +196,8 @@ class PlanNode extends \Google\Protobuf\Internal\Message
      */
     public function setChildLinks(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Spanner\V1\PlanNode_ChildLink::class);
-        $this->child_links = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Spanner\V1\PlanNode_ChildLink::class);
+        $this->child_links = $arr;
     }
 
     /**

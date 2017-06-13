@@ -118,8 +118,8 @@ class LookupRequest extends \Google\Protobuf\Internal\Message
      */
     public function setKeys(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Datastore\V1\Key::class);
-        $this->keys = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Datastore\V1\Key::class);
+        $this->keys = $arr;
     }
 
 }

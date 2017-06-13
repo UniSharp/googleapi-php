@@ -266,8 +266,8 @@ class RecognitionConfig extends \Google\Protobuf\Internal\Message
      */
     public function setSpeechContexts(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Speech\V1\SpeechContext::class);
-        $this->speech_contexts = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Speech\V1\SpeechContext::class);
+        $this->speech_contexts = $arr;
     }
 
 }

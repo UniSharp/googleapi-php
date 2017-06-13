@@ -102,8 +102,8 @@ class BillingStatusRule extends \Google\Protobuf\Internal\Message
      */
     public function setAllowedStatuses(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
-        $this->allowed_statuses = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->allowed_statuses = $arr;
     }
 
 }

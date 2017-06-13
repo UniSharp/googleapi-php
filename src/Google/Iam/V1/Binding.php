@@ -130,8 +130,8 @@ class Binding extends \Google\Protobuf\Internal\Message
      */
     public function setMembers(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
-        $this->members = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->members = $arr;
     }
 
 }

@@ -103,7 +103,8 @@ class MetricRule extends \Google\Protobuf\Internal\Message
      */
     public function setMetricCosts(&$var)
     {
-        $this->metric_costs = $var;
+        $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::STRING, \Google\Protobuf\Internal\GPBType::INT64);
+        $this->metric_costs = $arr;
     }
 
 }

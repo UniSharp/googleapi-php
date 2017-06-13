@@ -111,8 +111,8 @@ class ResultSet extends \Google\Protobuf\Internal\Message
      */
     public function setRows(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Protobuf\ListValue::class);
-        $this->rows = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Protobuf\ListValue::class);
+        $this->rows = $arr;
     }
 
     /**

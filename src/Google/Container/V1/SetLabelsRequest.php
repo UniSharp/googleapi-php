@@ -175,7 +175,8 @@ class SetLabelsRequest extends \Google\Protobuf\Internal\Message
      */
     public function setResourceLabels(&$var)
     {
-        $this->resource_labels = $var;
+        $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::STRING, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->resource_labels = $arr;
     }
 
     /**

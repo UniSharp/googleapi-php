@@ -170,7 +170,8 @@ class StaticFilesHandler extends \Google\Protobuf\Internal\Message
      */
     public function setHttpHeaders(&$var)
     {
-        $this->http_headers = $var;
+        $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::STRING, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->http_headers = $arr;
     }
 
     /**

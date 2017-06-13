@@ -127,12 +127,12 @@ class ValueRange extends \Google\Protobuf\Internal\Message
 
     public function getStartValue()
     {
-        return $this->start_value;
+        return $this->whichOneof("start_value");
     }
 
     public function getEndValue()
     {
-        return $this->end_value;
+        return $this->whichOneof("end_value");
     }
 
 }

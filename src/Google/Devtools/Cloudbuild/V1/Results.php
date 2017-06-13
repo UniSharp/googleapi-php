@@ -60,8 +60,8 @@ class Results extends \Google\Protobuf\Internal\Message
      */
     public function setImages(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Devtools\Cloudbuild\V1\BuiltImage::class);
-        $this->images = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Devtools\Cloudbuild\V1\BuiltImage::class);
+        $this->images = $arr;
     }
 
     /**
@@ -85,8 +85,8 @@ class Results extends \Google\Protobuf\Internal\Message
      */
     public function setBuildStepImages(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
-        $this->build_step_images = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->build_step_images = $arr;
     }
 
 }

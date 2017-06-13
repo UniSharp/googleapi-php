@@ -138,8 +138,8 @@ class InspectOperationMetadata extends \Google\Protobuf\Internal\Message
      */
     public function setInfoTypeStats(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Privacy\Dlp\V2beta1\InfoTypeStatistics::class);
-        $this->info_type_stats = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Privacy\Dlp\V2beta1\InfoTypeStatistics::class);
+        $this->info_type_stats = $arr;
     }
 
     /**

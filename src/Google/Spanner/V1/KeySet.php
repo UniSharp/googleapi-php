@@ -85,8 +85,8 @@ class KeySet extends \Google\Protobuf\Internal\Message
      */
     public function setKeys(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Protobuf\ListValue::class);
-        $this->keys = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Protobuf\ListValue::class);
+        $this->keys = $arr;
     }
 
     /**
@@ -112,8 +112,8 @@ class KeySet extends \Google\Protobuf\Internal\Message
      */
     public function setRanges(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Spanner\V1\KeyRange::class);
-        $this->ranges = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Spanner\V1\KeyRange::class);
+        $this->ranges = $arr;
     }
 
     /**

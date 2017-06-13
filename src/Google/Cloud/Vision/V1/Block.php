@@ -168,8 +168,8 @@ class Block extends \Google\Protobuf\Internal\Message
      */
     public function setParagraphs(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Vision\V1\Paragraph::class);
-        $this->paragraphs = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Vision\V1\Paragraph::class);
+        $this->paragraphs = $arr;
     }
 
     /**

@@ -330,7 +330,8 @@ class Span extends \Google\Protobuf\Internal\Message
      */
     public function setLabels(&$var)
     {
-        $this->labels = $var;
+        $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::STRING, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Tracing\V1\LabelValue::class);
+        $this->labels = $arr;
     }
 
     /**
@@ -379,8 +380,8 @@ class Span extends \Google\Protobuf\Internal\Message
      */
     public function setTimeEvents(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Tracing\V1\Span_TimeEvent::class);
-        $this->time_events = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Tracing\V1\Span_TimeEvent::class);
+        $this->time_events = $arr;
     }
 
     /**
@@ -404,8 +405,8 @@ class Span extends \Google\Protobuf\Internal\Message
      */
     public function setLinks(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Tracing\V1\Span_Link::class);
-        $this->links = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Tracing\V1\Span_Link::class);
+        $this->links = $arr;
     }
 
     /**

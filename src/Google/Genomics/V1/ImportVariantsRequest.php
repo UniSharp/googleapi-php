@@ -128,8 +128,8 @@ class ImportVariantsRequest extends \Google\Protobuf\Internal\Message
      */
     public function setSourceUris(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
-        $this->source_uris = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->source_uris = $arr;
     }
 
     /**
@@ -223,7 +223,8 @@ class ImportVariantsRequest extends \Google\Protobuf\Internal\Message
      */
     public function setInfoMergeConfig(&$var)
     {
-        $this->info_merge_config = $var;
+        $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::STRING, \Google\Protobuf\Internal\GPBType::ENUM, \Google\Genomics\V1\InfoMergeOperation::class);
+        $this->info_merge_config = $arr;
     }
 
 }

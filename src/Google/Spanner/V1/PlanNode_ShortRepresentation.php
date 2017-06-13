@@ -98,7 +98,8 @@ class PlanNode_ShortRepresentation extends \Google\Protobuf\Internal\Message
      */
     public function setSubqueries(&$var)
     {
-        $this->subqueries = $var;
+        $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::STRING, \Google\Protobuf\Internal\GPBType::INT32);
+        $this->subqueries = $arr;
     }
 
 }

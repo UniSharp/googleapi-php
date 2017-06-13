@@ -188,8 +188,8 @@ class PublishLifecycleEventRequest extends \Google\Protobuf\Internal\Message
      */
     public function setNotificationKeywords(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
-        $this->notification_keywords = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->notification_keywords = $arr;
     }
 
     /**

@@ -78,8 +78,8 @@ class LookupResponse extends \Google\Protobuf\Internal\Message
      */
     public function setFound(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Datastore\V1\EntityResult::class);
-        $this->found = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Datastore\V1\EntityResult::class);
+        $this->found = $arr;
     }
 
     /**
@@ -107,8 +107,8 @@ class LookupResponse extends \Google\Protobuf\Internal\Message
      */
     public function setMissing(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Datastore\V1\EntityResult::class);
-        $this->missing = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Datastore\V1\EntityResult::class);
+        $this->missing = $arr;
     }
 
     /**
@@ -136,8 +136,8 @@ class LookupResponse extends \Google\Protobuf\Internal\Message
      */
     public function setDeferred(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Datastore\V1\Key::class);
-        $this->deferred = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Datastore\V1\Key::class);
+        $this->deferred = $arr;
     }
 
 }

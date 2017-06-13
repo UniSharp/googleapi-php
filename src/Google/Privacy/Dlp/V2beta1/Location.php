@@ -137,8 +137,8 @@ class Location extends \Google\Protobuf\Internal\Message
      */
     public function setImageBoxes(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Privacy\Dlp\V2beta1\ImageLocation::class);
-        $this->image_boxes = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Privacy\Dlp\V2beta1\ImageLocation::class);
+        $this->image_boxes = $arr;
     }
 
     /**

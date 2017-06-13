@@ -67,8 +67,8 @@ class ListVariablesResponse extends \Google\Protobuf\Internal\Message
      */
     public function setVariables(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Runtimeconfig\V1beta1\Variable::class);
-        $this->variables = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Runtimeconfig\V1beta1\Variable::class);
+        $this->variables = $arr;
     }
 
     /**

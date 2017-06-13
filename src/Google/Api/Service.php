@@ -439,8 +439,8 @@ class Service extends \Google\Protobuf\Internal\Message
      */
     public function setApis(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Protobuf\Api::class);
-        $this->apis = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Protobuf\Api::class);
+        $this->apis = $arr;
     }
 
     /**
@@ -476,8 +476,8 @@ class Service extends \Google\Protobuf\Internal\Message
      */
     public function setTypes(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Protobuf\Type::class);
-        $this->types = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Protobuf\Type::class);
+        $this->types = $arr;
     }
 
     /**
@@ -511,8 +511,8 @@ class Service extends \Google\Protobuf\Internal\Message
      */
     public function setEnums(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Protobuf\Enum::class);
-        $this->enums = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Protobuf\Enum::class);
+        $this->enums = $arr;
     }
 
     /**
@@ -715,8 +715,8 @@ class Service extends \Google\Protobuf\Internal\Message
      */
     public function setEndpoints(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Api\Endpoint::class);
-        $this->endpoints = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Api\Endpoint::class);
+        $this->endpoints = $arr;
     }
 
     /**
@@ -765,8 +765,8 @@ class Service extends \Google\Protobuf\Internal\Message
      */
     public function setLogs(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Api\LogDescriptor::class);
-        $this->logs = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Api\LogDescriptor::class);
+        $this->logs = $arr;
     }
 
     /**
@@ -790,8 +790,8 @@ class Service extends \Google\Protobuf\Internal\Message
      */
     public function setMetrics(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Api\MetricDescriptor::class);
-        $this->metrics = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Api\MetricDescriptor::class);
+        $this->metrics = $arr;
     }
 
     /**
@@ -817,8 +817,8 @@ class Service extends \Google\Protobuf\Internal\Message
      */
     public function setMonitoredResources(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Api\MonitoredResourceDescriptor::class);
-        $this->monitored_resources = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Api\MonitoredResourceDescriptor::class);
+        $this->monitored_resources = $arr;
     }
 
     /**

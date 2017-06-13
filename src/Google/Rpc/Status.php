@@ -165,8 +165,8 @@ class Status extends \Google\Protobuf\Internal\Message
      */
     public function setDetails(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Protobuf\Any::class);
-        $this->details = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Protobuf\Any::class);
+        $this->details = $arr;
     }
 
 }

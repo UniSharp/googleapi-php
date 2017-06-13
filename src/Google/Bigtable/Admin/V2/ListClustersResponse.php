@@ -73,8 +73,8 @@ class ListClustersResponse extends \Google\Protobuf\Internal\Message
      */
     public function setClusters(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Bigtable\Admin\V2\Cluster::class);
-        $this->clusters = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Bigtable\Admin\V2\Cluster::class);
+        $this->clusters = $arr;
     }
 
     /**
@@ -104,8 +104,8 @@ class ListClustersResponse extends \Google\Protobuf\Internal\Message
      */
     public function setFailedLocations(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
-        $this->failed_locations = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->failed_locations = $arr;
     }
 
     /**

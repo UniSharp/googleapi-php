@@ -252,8 +252,8 @@ class FaceAnnotation extends \Google\Protobuf\Internal\Message
      */
     public function setLandmarks(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Vision\V1\FaceAnnotation_Landmark::class);
-        $this->landmarks = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Vision\V1\FaceAnnotation_Landmark::class);
+        $this->landmarks = $arr;
     }
 
     /**

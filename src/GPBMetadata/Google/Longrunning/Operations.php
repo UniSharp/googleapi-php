@@ -19,9 +19,8 @@ class Operations
         \GPBMetadata\Google\Protobuf\GPBEmpty::initOnce();
         \GPBMetadata\Google\Rpc\Status::initOnce();
         $pool->internalAddGeneratedFile(hex2bin(
-            "0aa40a0a23676f6f676c652f6c6f6e6772756e6e696e672f6f7065726174" .
+            "0a860a0a23676f6f676c652f6c6f6e6772756e6e696e672f6f7065726174" .
             "696f6e732e70726f746f1212676f6f676c652e6c6f6e6772756e6e696e67" .
-            "1a1c676f6f676c652f6170692f616e6e6f746174696f6e732e70726f746f" .
             "1a19676f6f676c652f70726f746f6275662f616e792e70726f746f1a1b67" .
             "6f6f676c652f70726f746f6275662f656d7074792e70726f746f1a17676f" .
             "6f676c652f7270632f7374617475732e70726f746f22a8010a094f706572" .

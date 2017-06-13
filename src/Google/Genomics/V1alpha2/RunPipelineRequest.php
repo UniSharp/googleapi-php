@@ -115,7 +115,7 @@ class RunPipelineRequest extends \Google\Protobuf\Internal\Message
 
     public function getPipeline()
     {
-        return $this->pipeline;
+        return $this->whichOneof("pipeline");
     }
 
 }

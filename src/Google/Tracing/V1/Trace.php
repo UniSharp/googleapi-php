@@ -87,8 +87,8 @@ class Trace extends \Google\Protobuf\Internal\Message
      */
     public function setSpans(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Tracing\V1\Span::class);
-        $this->spans = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Tracing\V1\Span::class);
+        $this->spans = $arr;
     }
 
 }

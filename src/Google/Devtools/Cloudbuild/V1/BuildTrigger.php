@@ -286,12 +286,13 @@ class BuildTrigger extends \Google\Protobuf\Internal\Message
      */
     public function setSubstitutions(&$var)
     {
-        $this->substitutions = $var;
+        $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::STRING, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->substitutions = $arr;
     }
 
     public function getBuildTemplate()
     {
-        return $this->build_template;
+        return $this->whichOneof("build_template");
     }
 
 }

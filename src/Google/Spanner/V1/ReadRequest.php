@@ -234,8 +234,8 @@ class ReadRequest extends \Google\Protobuf\Internal\Message
      */
     public function setColumns(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
-        $this->columns = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->columns = $arr;
     }
 
     /**

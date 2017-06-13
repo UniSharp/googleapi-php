@@ -271,7 +271,7 @@ class Rollout extends \Google\Protobuf\Internal\Message
 
     public function getStrategy()
     {
-        return $this->strategy;
+        return $this->whichOneof("strategy");
     }
 
 }

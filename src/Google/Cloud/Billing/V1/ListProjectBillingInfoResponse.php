@@ -65,8 +65,8 @@ class ListProjectBillingInfoResponse extends \Google\Protobuf\Internal\Message
      */
     public function setProjectBillingInfo(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Billing\V1\ProjectBillingInfo::class);
-        $this->project_billing_info = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Billing\V1\ProjectBillingInfo::class);
+        $this->project_billing_info = $arr;
     }
 
     /**

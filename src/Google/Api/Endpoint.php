@@ -147,8 +147,8 @@ class Endpoint extends \Google\Protobuf\Internal\Message
      */
     public function setAliases(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
-        $this->aliases = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->aliases = $arr;
     }
 
     /**
@@ -172,8 +172,8 @@ class Endpoint extends \Google\Protobuf\Internal\Message
      */
     public function setApis(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
-        $this->apis = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->apis = $arr;
     }
 
     /**
@@ -197,8 +197,8 @@ class Endpoint extends \Google\Protobuf\Internal\Message
      */
     public function setFeatures(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
-        $this->features = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->features = $arr;
     }
 
     /**

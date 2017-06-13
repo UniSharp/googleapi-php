@@ -91,7 +91,8 @@ class AuditData extends \Google\Protobuf\Internal\Message
      */
     public function setEventData(&$var)
     {
-        $this->event_data = $var;
+        $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::STRING, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->event_data = $arr;
     }
 
 }

@@ -82,7 +82,7 @@ class ReadOptions extends \Google\Protobuf\Internal\Message
 
     public function getConsistencyType()
     {
-        return $this->consistency_type;
+        return $this->whichOneof("consistency_type");
     }
 
 }

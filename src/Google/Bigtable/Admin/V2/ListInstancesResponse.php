@@ -74,8 +74,8 @@ class ListInstancesResponse extends \Google\Protobuf\Internal\Message
      */
     public function setInstances(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Bigtable\Admin\V2\Instance::class);
-        $this->instances = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Bigtable\Admin\V2\Instance::class);
+        $this->instances = $arr;
     }
 
     /**
@@ -107,8 +107,8 @@ class ListInstancesResponse extends \Google\Protobuf\Internal\Message
      */
     public function setFailedLocations(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
-        $this->failed_locations = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->failed_locations = $arr;
     }
 
     /**

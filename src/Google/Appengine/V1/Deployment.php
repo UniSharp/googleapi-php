@@ -75,7 +75,8 @@ class Deployment extends \Google\Protobuf\Internal\Message
      */
     public function setFiles(&$var)
     {
-        $this->files = $var;
+        $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::STRING, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Appengine\V1\FileInfo::class);
+        $this->files = $arr;
     }
 
     /**

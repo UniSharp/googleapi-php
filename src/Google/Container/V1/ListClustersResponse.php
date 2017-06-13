@@ -64,8 +64,8 @@ class ListClustersResponse extends \Google\Protobuf\Internal\Message
      */
     public function setClusters(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Container\V1\Cluster::class);
-        $this->clusters = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Container\V1\Cluster::class);
+        $this->clusters = $arr;
     }
 
     /**
@@ -91,8 +91,8 @@ class ListClustersResponse extends \Google\Protobuf\Internal\Message
      */
     public function setMissingZones(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
-        $this->missing_zones = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->missing_zones = $arr;
     }
 
 }

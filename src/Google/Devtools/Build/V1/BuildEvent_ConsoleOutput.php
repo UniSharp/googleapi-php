@@ -109,7 +109,7 @@ class BuildEvent_ConsoleOutput extends \Google\Protobuf\Internal\Message
 
     public function getOutput()
     {
-        return $this->output;
+        return $this->whichOneof("output");
     }
 
 }

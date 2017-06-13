@@ -60,8 +60,8 @@ class ListBuildsResponse extends \Google\Protobuf\Internal\Message
      */
     public function setBuilds(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Devtools\Cloudbuild\V1\Build::class);
-        $this->builds = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Devtools\Cloudbuild\V1\Build::class);
+        $this->builds = $arr;
     }
 
     /**

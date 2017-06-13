@@ -179,8 +179,8 @@ class AnnotateVideoRequest extends \Google\Protobuf\Internal\Message
      */
     public function setFeatures(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, Google\Cloud\Videointelligence\V1beta1\Feature::class);
-        $this->features = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, \Google\Cloud\Videointelligence\V1beta1\Feature::class);
+        $this->features = $arr;
     }
 
     /**

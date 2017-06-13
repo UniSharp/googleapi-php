@@ -104,8 +104,8 @@ class Quota extends \Google\Protobuf\Internal\Message
      */
     public function setLimits(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Api\QuotaLimit::class);
-        $this->limits = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Api\QuotaLimit::class);
+        $this->limits = $arr;
     }
 
     /**
@@ -133,8 +133,8 @@ class Quota extends \Google\Protobuf\Internal\Message
      */
     public function setMetricRules(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Api\MetricRule::class);
-        $this->metric_rules = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Api\MetricRule::class);
+        $this->metric_rules = $arr;
     }
 
 }

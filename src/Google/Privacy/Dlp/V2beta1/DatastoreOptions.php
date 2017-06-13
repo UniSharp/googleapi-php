@@ -124,8 +124,8 @@ class DatastoreOptions extends \Google\Protobuf\Internal\Message
      */
     public function setProjection(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Privacy\Dlp\V2beta1\Projection::class);
-        $this->projection = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Privacy\Dlp\V2beta1\Projection::class);
+        $this->projection = $arr;
     }
 
 }

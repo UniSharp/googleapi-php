@@ -113,7 +113,8 @@ class Table extends \Google\Protobuf\Internal\Message
      */
     public function setColumnFamilies(&$var)
     {
-        $this->column_families = $var;
+        $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::STRING, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Bigtable\Admin\V2\ColumnFamily::class);
+        $this->column_families = $arr;
     }
 
     /**

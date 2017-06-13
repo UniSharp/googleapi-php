@@ -397,7 +397,7 @@ class Value extends \Google\Protobuf\Internal\Message
 
     public function getValueType()
     {
-        return $this->value_type;
+        return $this->whichOneof("value_type");
     }
 
 }

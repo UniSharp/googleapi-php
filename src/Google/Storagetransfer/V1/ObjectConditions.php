@@ -221,8 +221,8 @@ class ObjectConditions extends \Google\Protobuf\Internal\Message
      */
     public function setIncludePrefixes(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
-        $this->include_prefixes = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->include_prefixes = $arr;
     }
 
     /**
@@ -250,8 +250,8 @@ class ObjectConditions extends \Google\Protobuf\Internal\Message
      */
     public function setExcludePrefixes(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
-        $this->exclude_prefixes = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->exclude_prefixes = $arr;
     }
 
 }

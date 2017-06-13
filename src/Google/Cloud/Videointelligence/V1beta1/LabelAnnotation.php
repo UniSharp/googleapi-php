@@ -118,8 +118,8 @@ class LabelAnnotation extends \Google\Protobuf\Internal\Message
      */
     public function setLocations(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Videointelligence\V1beta1\LabelLocation::class);
-        $this->locations = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Videointelligence\V1beta1\LabelLocation::class);
+        $this->locations = $arr;
     }
 
 }

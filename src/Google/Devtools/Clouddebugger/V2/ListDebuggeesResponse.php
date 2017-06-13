@@ -64,8 +64,8 @@ class ListDebuggeesResponse extends \Google\Protobuf\Internal\Message
      */
     public function setDebuggees(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Devtools\Clouddebugger\V2\Debuggee::class);
-        $this->debuggees = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Devtools\Clouddebugger\V2\Debuggee::class);
+        $this->debuggees = $arr;
     }
 
 }

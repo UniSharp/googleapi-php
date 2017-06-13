@@ -103,8 +103,8 @@ class FormatMessage extends \Google\Protobuf\Internal\Message
      */
     public function setParameters(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
-        $this->parameters = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->parameters = $arr;
     }
 
 }

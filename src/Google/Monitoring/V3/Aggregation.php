@@ -269,8 +269,8 @@ class Aggregation extends \Google\Protobuf\Internal\Message
      */
     public function setGroupByFields(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
-        $this->group_by_fields = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->group_by_fields = $arr;
     }
 
 }

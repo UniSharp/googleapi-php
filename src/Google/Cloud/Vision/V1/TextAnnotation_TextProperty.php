@@ -60,8 +60,8 @@ class TextAnnotation_TextProperty extends \Google\Protobuf\Internal\Message
      */
     public function setDetectedLanguages(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Vision\V1\TextAnnotation_DetectedLanguage::class);
-        $this->detected_languages = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Vision\V1\TextAnnotation_DetectedLanguage::class);
+        $this->detected_languages = $arr;
     }
 
     /**

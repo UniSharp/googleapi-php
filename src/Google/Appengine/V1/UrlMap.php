@@ -285,7 +285,7 @@ class UrlMap extends \Google\Protobuf\Internal\Message
 
     public function getHandlerType()
     {
-        return $this->handler_type;
+        return $this->whichOneof("handler_type");
     }
 
 }

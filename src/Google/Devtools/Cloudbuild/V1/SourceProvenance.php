@@ -146,7 +146,8 @@ class SourceProvenance extends \Google\Protobuf\Internal\Message
      */
     public function setFileHashes(&$var)
     {
-        $this->file_hashes = $var;
+        $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::STRING, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Devtools\Cloudbuild\V1\FileHashes::class);
+        $this->file_hashes = $arr;
     }
 
 }

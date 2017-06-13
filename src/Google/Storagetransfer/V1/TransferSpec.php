@@ -205,12 +205,12 @@ class TransferSpec extends \Google\Protobuf\Internal\Message
 
     public function getDataSource()
     {
-        return $this->data_source;
+        return $this->whichOneof("data_source");
     }
 
     public function getDataSink()
     {
-        return $this->data_sink;
+        return $this->whichOneof("data_sink");
     }
 
 }

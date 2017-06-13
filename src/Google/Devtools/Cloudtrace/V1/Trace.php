@@ -123,8 +123,8 @@ class Trace extends \Google\Protobuf\Internal\Message
      */
     public function setSpans(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Devtools\Cloudtrace\V1\TraceSpan::class);
-        $this->spans = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Devtools\Cloudtrace\V1\TraceSpan::class);
+        $this->spans = $arr;
     }
 
 }

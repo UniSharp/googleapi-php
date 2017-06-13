@@ -149,8 +149,8 @@ class StreamingPullRequest extends \Google\Protobuf\Internal\Message
      */
     public function setAckIds(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
-        $this->ack_ids = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->ack_ids = $arr;
     }
 
     /**
@@ -194,8 +194,8 @@ class StreamingPullRequest extends \Google\Protobuf\Internal\Message
      */
     public function setModifyDeadlineSeconds(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::INT32);
-        $this->modify_deadline_seconds = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::INT32);
+        $this->modify_deadline_seconds = $arr;
     }
 
     /**
@@ -227,8 +227,8 @@ class StreamingPullRequest extends \Google\Protobuf\Internal\Message
      */
     public function setModifyDeadlineAckIds(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
-        $this->modify_deadline_ack_ids = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->modify_deadline_ack_ids = $arr;
     }
 
     /**

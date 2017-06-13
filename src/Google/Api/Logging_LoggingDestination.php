@@ -98,8 +98,8 @@ class Logging_LoggingDestination extends \Google\Protobuf\Internal\Message
      */
     public function setLogs(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
-        $this->logs = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->logs = $arr;
     }
 
 }

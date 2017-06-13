@@ -80,8 +80,8 @@ class WebDetection extends \Google\Protobuf\Internal\Message
      */
     public function setWebEntities(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Vision\V1\WebDetection_WebEntity::class);
-        $this->web_entities = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Vision\V1\WebDetection_WebEntity::class);
+        $this->web_entities = $arr;
     }
 
     /**
@@ -109,8 +109,8 @@ class WebDetection extends \Google\Protobuf\Internal\Message
      */
     public function setFullMatchingImages(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Vision\V1\WebDetection_WebImage::class);
-        $this->full_matching_images = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Vision\V1\WebDetection_WebImage::class);
+        $this->full_matching_images = $arr;
     }
 
     /**
@@ -138,8 +138,8 @@ class WebDetection extends \Google\Protobuf\Internal\Message
      */
     public function setPartialMatchingImages(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Vision\V1\WebDetection_WebImage::class);
-        $this->partial_matching_images = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Vision\V1\WebDetection_WebImage::class);
+        $this->partial_matching_images = $arr;
     }
 
     /**
@@ -163,8 +163,8 @@ class WebDetection extends \Google\Protobuf\Internal\Message
      */
     public function setPagesWithMatchingImages(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Vision\V1\WebDetection_WebPage::class);
-        $this->pages_with_matching_images = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Vision\V1\WebDetection_WebPage::class);
+        $this->pages_with_matching_images = $arr;
     }
 
 }

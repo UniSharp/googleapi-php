@@ -249,8 +249,8 @@ class NodeConfig extends \Google\Protobuf\Internal\Message
      */
     public function setOauthScopes(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
-        $this->oauth_scopes = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->oauth_scopes = $arr;
     }
 
     /**
@@ -319,7 +319,8 @@ class NodeConfig extends \Google\Protobuf\Internal\Message
      */
     public function setMetadata(&$var)
     {
-        $this->metadata = $var;
+        $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::STRING, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->metadata = $arr;
     }
 
     /**
@@ -384,7 +385,8 @@ class NodeConfig extends \Google\Protobuf\Internal\Message
      */
     public function setLabels(&$var)
     {
-        $this->labels = $var;
+        $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::STRING, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->labels = $arr;
     }
 
     /**
@@ -447,8 +449,8 @@ class NodeConfig extends \Google\Protobuf\Internal\Message
      */
     public function setTags(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
-        $this->tags = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->tags = $arr;
     }
 
     /**

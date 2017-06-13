@@ -112,7 +112,7 @@ class ReadRowsResponse_Chunk extends \Google\Protobuf\Internal\Message
 
     public function getChunk()
     {
-        return $this->chunk;
+        return $this->whichOneof("chunk");
     }
 
 }

@@ -163,8 +163,8 @@ class Word extends \Google\Protobuf\Internal\Message
      */
     public function setSymbols(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Vision\V1\Symbol::class);
-        $this->symbols = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Vision\V1\Symbol::class);
+        $this->symbols = $arr;
     }
 
 }

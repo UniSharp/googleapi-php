@@ -340,8 +340,8 @@ class EntityAnnotation extends \Google\Protobuf\Internal\Message
      */
     public function setLocations(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Vision\V1\LocationInfo::class);
-        $this->locations = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Vision\V1\LocationInfo::class);
+        $this->locations = $arr;
     }
 
     /**
@@ -367,8 +367,8 @@ class EntityAnnotation extends \Google\Protobuf\Internal\Message
      */
     public function setProperties(&$var)
     {
-        GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Vision\V1\Property::class);
-        $this->properties = $var;
+        $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Cloud\Vision\V1\Property::class);
+        $this->properties = $arr;
     }
 
 }

@@ -133,7 +133,8 @@ class PushConfig extends \Google\Protobuf\Internal\Message
      */
     public function setAttributes(&$var)
     {
-        $this->attributes = $var;
+        $arr = GPBUtil::checkMapField($var, \Google\Protobuf\Internal\GPBType::STRING, \Google\Protobuf\Internal\GPBType::STRING);
+        $this->attributes = $arr;
     }
 
 }
